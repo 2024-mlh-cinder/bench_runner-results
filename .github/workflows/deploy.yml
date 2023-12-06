@@ -10,6 +10,8 @@ jobs:
     steps:
       - name: Check out the repository to the runner
         uses: actions/checkout@v4
+        with:
+          repository: https://github.com/2024-mlh-cinder/bench_runner-terraform
 
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
@@ -23,7 +25,6 @@ jobs:
 
       - name: Start EC2 instance Using Terraform Configuration
         run: |
-          cd terraform
           terraform init
           terraform apply -auto-approve -input=false -var register_token="$REGISTER_TOKEN"
         env:
