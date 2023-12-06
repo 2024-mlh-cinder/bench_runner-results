@@ -18,13 +18,14 @@ on:
         default: main
       machine:
         description: Machine to run on
-        default: linux-amd64
+        default: linux-x86_64-aws
         type: choice
         options:
         - linux-x86_64-linux
         - darwin-arm64-darwin
         - windows-x86_64-pythonperf1
         - linux-x86_64-pythonperf2
+        - linux-x86_64-aws
         - all
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
