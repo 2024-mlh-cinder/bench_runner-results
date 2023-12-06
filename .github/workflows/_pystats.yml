@@ -74,14 +74,13 @@ jobs:
       uses: actions/setup-python@v4
       with:
         python-version: '3.11'
-        fetch-depth: 0
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
         repository: ${{ inputs.fork }}/${{ inputs.repo }}
         ref: ${{ inputs.ref }}
         path: ${{ inputs.repo }}
-        fetch-depth: 0
+        fetch-depth: 50
     - name: Install dependencies from PyPI
       run: |
         python -m pip install -r requirements.txt
@@ -97,7 +96,6 @@ jobs:
         repository: pyston/python-macrobenchmarks
         path: pyston-benchmarks
         ref: ${{ env.PYSTON_BENCHMARKS_HASH }}
-        fetch-depth: 0
     - name: Checkout pyperformance
       uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
@@ -105,7 +103,6 @@ jobs:
         repository: python/pyperformance
         path: pyperformance
         ref: ${{ env.PYPERFORMANCE_HASH }}
-        fetch-depth: 0
     - name: Create pystats directory
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
