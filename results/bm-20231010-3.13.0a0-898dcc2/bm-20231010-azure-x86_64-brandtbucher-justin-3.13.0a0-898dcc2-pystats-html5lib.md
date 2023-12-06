@@ -1,0 +1,3308 @@
+
+# Pystats results
+
+- benchmark: html5lib
+- fork: brandtbucher
+- ref: justin
+- commit hash: 898dcc2
+- commit date: 2023-10-10T14:45:03+02:00
+
+## Execution counts
+
+<details>
+<summary> execution counts for all instructions </summary>
+
+|Name | Count | Self | Cumulative | Miss ratio | 
+|---|---:|---:|---:|---:|
+| LOAD_FAST | 156,405,520 | 23.2% | 23.2% |  |
+| LOAD_ATTR_INSTANCE_VALUE | 63,353,680 | 9.4% | 32.7% | 0.0% |
+| LOAD_CONST | 48,025,860 | 7.1% | 39.8% |  |
+| POP_JUMP_IF_FALSE | 44,840,540 | 6.7% | 46.5% |  |
+| STORE_FAST | 41,591,940 | 6.2% | 52.6% |  |
+| RESUME_CHECK | 22,540,980 | 3.4% | 56.0% | 0.0% |
+| BINARY_SUBSCR_DICT | 15,021,600 | 2.2% | 58.2% |  |
+| COMPARE_OP_INT | 13,990,260 | 2.1% | 60.3% |  |
+| CALL_PY_EXACT_ARGS | 13,547,100 | 2.0% | 62.3% | 28.4% |
+| LOAD_GLOBAL_MODULE | 13,411,060 | 2.0% | 64.3% | 0.0% |
+| TO_BOOL_BOOL | 13,075,440 | 1.9% | 66.3% |  |
+| STORE_ATTR_INSTANCE_VALUE | 12,826,920 | 1.9% | 68.2% | 0.0% |
+| LOAD_FAST_LOAD_FAST | 12,438,800 | 1.8% | 70.0% |  |
+| RETURN_VALUE | 11,555,100 | 1.7% | 71.7% |  |
+| COMPARE_OP_STR | 10,869,600 | 1.6% | 73.3% | 0.1% |
+| RETURN_CONST | 10,307,040 | 1.5% | 74.9% |  |
+| LOAD_ATTR_METHOD_NO_DICT | 9,869,080 | 1.5% | 76.3% | 0.1% |
+| LOAD_ATTR_METHOD_WITH_VALUES | 9,602,800 | 1.4% | 77.8% | 0.0% |
+| POP_JUMP_IF_TRUE | 9,599,160 | 1.4% | 79.2% |  |
+| JUMP_FORWARD | 7,301,240 | 1.1% | 80.3% |  |
+| CONTAINS_OP | 7,224,160 | 1.1% | 81.4% |  |
+| POP_TOP | 6,969,060 | 1.0% | 82.4% |  |
+| LOAD_GLOBAL_BUILTIN | 6,333,900 | 0.9% | 83.3% |  |
+| LOAD_ATTR_SLOT | 5,846,400 | 0.9% | 84.2% | 0.2% |
+| ENTER_EXECUTOR | 5,355,680 | 0.8% | 85.0% |  |
+| BINARY_OP_ADD_INT | 5,305,240 | 0.8% | 85.8% |  |
+| BINARY_SUBSCR_STR_INT | 5,166,720 | 0.8% | 86.6% | 0.0% |
+| LOAD_ATTR | 5,108,260 | 0.8% | 87.3% |  |
+| BINARY_SUBSCR | 5,003,220 | 0.7% | 88.1% |  |
+| EXTENDED_ARG | 3,779,760 | 0.6% | 88.6% |  |
+| LOAD_ATTR_PROPERTY | 3,683,400 | 0.5% | 89.2% |  |
+| SWAP | 3,316,800 | 0.5% | 89.7% |  |
+| COPY | 3,232,200 | 0.5% | 90.1% |  |
+| CALL_METHOD_DESCRIPTOR_O | 2,999,840 | 0.4% | 90.6% | 8.6% |
+| BUILD_LIST | 2,786,640 | 0.4% | 91.0% |  |
+| CALL_LEN | 2,778,960 | 0.4% | 91.4% |  |
+| BINARY_OP_ADD_UNICODE | 2,611,200 | 0.4% | 91.8% |  |
+| COMPARE_OP | 2,274,040 | 0.3% | 92.1% |  |
+| POP_JUMP_IF_NOT_NONE | 2,258,040 | 0.3% | 92.5% |  |
+| TO_BOOL_ALWAYS_TRUE | 2,202,320 | 0.3% | 92.8% | 0.0% |
+| STORE_SUBSCR_DICT | 2,151,600 | 0.3% | 93.1% |  |
+| POP_JUMP_IF_NONE | 2,084,040 | 0.3% | 93.4% |  |
+| JUMP_BACKWARD | 2,008,480 | 0.3% | 93.7% |  |
+| TO_BOOL | 1,982,580 | 0.3% | 94.0% |  |
+| FOR_ITER | 1,748,100 | 0.3% | 94.3% |  |
+| CALL_BOUND_METHOD_EXACT_ARGS | 1,733,320 | 0.3% | 94.5% | 55.6% |
+| GET_ITER | 1,695,300 | 0.3% | 94.8% |  |
+| CALL_LIST_APPEND | 1,695,120 | 0.3% | 95.0% |  |
+| NOP | 1,658,340 | 0.2% | 95.3% |  |
+| BUILD_TUPLE | 1,635,360 | 0.2% | 95.5% |  |
+| CALL_METHOD_DESCRIPTOR_FAST | 1,602,960 | 0.2% | 95.8% | 0.4% |
+| IS_OP | 1,593,960 | 0.2% | 96.0% |  |
+| CALL_METHOD_DESCRIPTOR_NOARGS | 1,593,720 | 0.2% | 96.2% |  |
+| CALL_PY_WITH_DEFAULTS | 1,529,160 | 0.2% | 96.5% |  |
+| CALL | 1,527,760 | 0.2% | 96.7% |  |
+| CALL_ISINSTANCE | 1,488,960 | 0.2% | 96.9% |  |
+| TO_BOOL_LIST | 1,357,520 | 0.2% | 97.1% |  |
+| BINARY_SLICE | 1,154,800 | 0.2% | 97.3% |  |
+| BUILD_CONST_KEY_MAP | 1,134,360 | 0.2% | 97.5% |  |
+| CALL_BUILTIN_CLASS | 1,107,540 | 0.2% | 97.6% |  |
+| STORE_ATTR | 1,073,160 | 0.2% | 97.8% |  |
+| LOAD_FAST_CHECK | 1,040,640 | 0.2% | 97.9% |  |
+| FOR_ITER_GEN | 1,037,640 | 0.2% | 98.1% |  |
+| YIELD_VALUE | 1,037,520 | 0.2% | 98.3% |  |
+| FOR_ITER_LIST | 913,800 | 0.1% | 98.4% |  |
+| BINARY_OP | 874,280 | 0.1% | 98.5% |  |
+| STORE_FAST_STORE_FAST | 699,840 | 0.1% | 98.6% |  |
+| UNPACK_SEQUENCE_TWO_TUPLE | 698,520 | 0.1% | 98.7% |  |
+| BINARY_SUBSCR_LIST_INT | 693,600 | 0.1% | 98.8% |  |
+| STORE_SUBSCR_LIST_INT | 672,240 | 0.1% | 98.9% |  |
+| FORMAT_SIMPLE | 668,640 | 0.1% | 99.0% |  |
+| CONVERT_VALUE | 668,640 | 0.1% | 99.1% |  |
+| PUSH_NULL | 659,280 | 0.1% | 99.2% |  |
+| BUILD_SLICE | 570,840 | 0.1% | 99.3% |  |
+| CALL_BUILTIN_FAST | 474,000 | 0.1% | 99.4% |  |
+| BINARY_OP_SUBTRACT_INT | 395,040 | 0.1% | 99.4% |  |
+| TO_BOOL_INT | 383,280 | 0.1% | 99.5% |  |
+| CALL_KW | 374,640 | 0.1% | 99.6% |  |
+| INTERPRETER_EXIT | 365,400 | 0.1% | 99.6% |  |
+| TO_BOOL_NONE | 358,460 | 0.1% | 99.7% | 6.8% |
+| EXIT_INIT_CHECK | 347,520 | 0.1% | 99.7% |  |
+| CALL_ALLOC_AND_ENTER_INIT | 347,520 | 0.1% | 99.8% |  |
+| LOAD_ATTR_MODULE | 337,180 | 0.1% | 99.8% |  |
+| LOAD_DEREF | 336,360 | 0.0% | 99.9% |  |
+| COPY_FREE_VARS | 336,300 | 0.0% | 99.9% |  |
+| BUILD_STRING | 334,320 | 0.0% | 100.0% |  |
+| LOAD_ATTR_CLASS | 132,720 | 0.0% | 100.0% |  |
+| TO_BOOL_STR | 31,860 | 0.0% | 100.0% | 76.5% |
+| STORE_ATTR_SLOT | 11,640 | 0.0% | 100.0% | 91.4% |
+| BINARY_SUBSCR_GETITEM | 11,520 | 0.0% | 100.0% |  |
+| STORE_FAST_LOAD_FAST | 10,320 | 0.0% | 100.0% |  |
+| LOAD_ATTR_METHOD_LAZY_DICT | 8,760 | 0.0% | 100.0% |  |
+| CALL_BUILTIN_FAST_WITH_KEYWORDS | 7,440 | 0.0% | 100.0% |  |
+| BUILD_MAP | 7,080 | 0.0% | 100.0% |  |
+| CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS | 5,880 | 0.0% | 100.0% |  |
+| UNPACK_SEQUENCE_LIST | 3,120 | 0.0% | 100.0% |  |
+| BINARY_OP_INPLACE_ADD_UNICODE | 3,120 | 0.0% | 100.0% |  |
+| MAP_ADD | 2,760 | 0.0% | 100.0% |  |
+| FOR_ITER_TUPLE | 2,200 | 0.0% | 100.0% |  |
+| FOR_ITER_RANGE | 1,860 | 0.0% | 100.0% |  |
+| LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES | 1,800 | 0.0% | 100.0% |  |
+| CALL_BUILTIN_O | 1,680 | 0.0% | 100.0% |  |
+| BINARY_SUBSCR_TUPLE_INT | 1,680 | 0.0% | 100.0% |  |
+| CALL_FUNCTION_EX | 1,020 | 0.0% | 100.0% |  |
+| DICT_MERGE | 960 | 0.0% | 100.0% |  |
+| CALL_TUPLE_1 | 360 | 0.0% | 100.0% |  |
+| LOAD_SUPER_ATTR_ATTR | 240 | 0.0% | 100.0% |  |
+| LOAD_FAST_AND_CLEAR | 240 | 0.0% | 100.0% |  |
+| RETURN_GENERATOR | 120 | 0.0% | 100.0% |  |
+| LOAD_SUPER_ATTR_METHOD | 120 | 0.0% | 100.0% |  |
+| LIST_EXTEND | 120 | 0.0% | 100.0% |  |
+| IMPORT_NAME | 120 | 0.0% | 100.0% |  |
+| IMPORT_FROM | 120 | 0.0% | 100.0% |  |
+| END_FOR | 120 | 0.0% | 100.0% |  |
+| CALL_TYPE_1 | 120 | 0.0% | 100.0% |  |
+| CALL_INTRINSIC_1 | 120 | 0.0% | 100.0% |  |
+| LOAD_GLOBAL | 80 | 0.0% | 100.0% |  |
+| BINARY_OP_SUBTRACT_FLOAT | 60 | 0.0% | 100.0% |  |
+
+
+</details>
+
+## Pair counts
+
+<details>
+<summary> Pair counts for top 100 pairs </summary>
+
+|Pair | Count | Self | Cumulative | 
+|---|---:|---:|---:|
+| LOAD_FAST LOAD_ATTR_INSTANCE_VALUE | 53,532,600 | 8.0% | 8.0% |
+| POP_JUMP_IF_FALSE LOAD_FAST | 32,204,200 | 4.8% | 12.7% |
+| STORE_FAST LOAD_FAST | 30,189,680 | 4.5% | 17.2% |
+| LOAD_FAST LOAD_CONST | 23,818,780 | 3.5% | 20.8% |
+| RESUME_CHECK LOAD_FAST | 19,082,400 | 2.8% | 23.6% |
+| LOAD_ATTR_INSTANCE_VALUE LOAD_FAST | 16,098,720 | 2.4% | 26.0% |
+| CALL_PY_EXACT_ARGS RESUME_CHECK | 13,474,420 | 2.0% | 28.0% |
+| LOAD_CONST BINARY_SUBSCR_DICT | 12,036,480 | 1.8% | 29.8% |
+| COMPARE_OP_INT POP_JUMP_IF_FALSE | 11,631,180 | 1.7% | 31.5% |
+| LOAD_FAST STORE_ATTR_INSTANCE_VALUE | 10,886,640 | 1.6% | 33.1% |
+| COMPARE_OP_STR POP_JUMP_IF_FALSE | 9,661,540 | 1.4% | 34.6% |
+| LOAD_CONST COMPARE_OP_STR | 9,187,440 | 1.4% | 35.9% |
+| TO_BOOL_BOOL POP_JUMP_IF_FALSE | 8,998,320 | 1.3% | 37.3% |
+| LOAD_ATTR_INSTANCE_VALUE STORE_FAST | 6,856,920 | 1.0% | 38.3% |
+| LOAD_FAST LOAD_GLOBAL_MODULE | 6,808,320 | 1.0% | 39.3% |
+| RETURN_VALUE STORE_FAST | 6,732,120 | 1.0% | 40.3% |
+| LOAD_FAST RETURN_VALUE | 6,665,700 | 1.0% | 41.3% |
+| LOAD_ATTR_METHOD_WITH_VALUES CALL_PY_EXACT_ARGS | 6,418,160 | 1.0% | 42.3% |
+| STORE_ATTR_INSTANCE_VALUE LOAD_FAST | 6,174,480 | 0.9% | 43.2% |
+| CONTAINS_OP POP_JUMP_IF_FALSE | 6,028,240 | 0.9% | 44.1% |
+| LOAD_ATTR_INSTANCE_VALUE LOAD_ATTR_METHOD_WITH_VALUES | 5,993,480 | 0.9% | 45.0% |
+| LOAD_ATTR_INSTANCE_VALUE COMPARE_OP_INT | 5,988,720 | 0.9% | 45.8% |
+| LOAD_ATTR_INSTANCE_VALUE LOAD_CONST | 5,860,160 | 0.9% | 46.7% |
+| RETURN_CONST TO_BOOL_BOOL | 5,640,720 | 0.8% | 47.6% |
+| LOAD_ATTR_METHOD_NO_DICT LOAD_FAST | 5,518,520 | 0.8% | 48.4% |
+| LOAD_GLOBAL_BUILTIN LOAD_FAST | 5,304,780 | 0.8% | 49.2% |
+| LOAD_CONST BINARY_OP_ADD_INT | 5,302,480 | 0.8% | 50.0% |
+| LOAD_FAST BINARY_SUBSCR_STR_INT | 5,163,120 | 0.8% | 50.7% |
+| BINARY_SUBSCR_STR_INT STORE_FAST | 5,163,120 | 0.8% | 51.5% |
+| BINARY_OP_ADD_INT LOAD_FAST | 5,163,120 | 0.8% | 52.3% |
+| POP_JUMP_IF_FALSE ENTER_EXECUTOR | 5,160,780 | 0.8% | 53.0% |
+| LOAD_FAST LOAD_ATTR_SLOT | 4,805,600 | 0.7% | 53.7% |
+| LOAD_GLOBAL_MODULE CONTAINS_OP | 4,634,280 | 0.7% | 54.4% |
+| LOAD_FAST LOAD_ATTR_METHOD_NO_DICT | 4,389,920 | 0.7% | 55.1% |
+| LOAD_ATTR_INSTANCE_VALUE LOAD_ATTR_INSTANCE_VALUE | 4,152,040 | 0.6% | 55.7% |
+| TO_BOOL_BOOL POP_JUMP_IF_TRUE | 4,076,880 | 0.6% | 56.3% |
+| LOAD_CONST BINARY_SUBSCR | 4,041,080 | 0.6% | 56.9% |
+| LOAD_ATTR LOAD_FAST | 4,014,480 | 0.6% | 57.5% |
+| BINARY_SUBSCR_DICT STORE_FAST | 3,934,560 | 0.6% | 58.1% |
+| STORE_ATTR_INSTANCE_VALUE RETURN_CONST | 3,845,640 | 0.6% | 58.7% |
+| LOAD_FAST_LOAD_FAST COMPARE_OP_INT | 3,831,240 | 0.6% | 59.2% |
+| LOAD_FAST LOAD_ATTR | 3,748,440 | 0.6% | 59.8% |
+| LOAD_FAST TO_BOOL_BOOL | 3,713,160 | 0.6% | 60.3% |
+| LOAD_ATTR_PROPERTY RESUME_CHECK | 3,683,400 | 0.5% | 60.9% |
+| LOAD_ATTR_INSTANCE_VALUE RETURN_VALUE | 3,683,160 | 0.5% | 61.4% |
+| POP_JUMP_IF_TRUE LOAD_FAST | 3,667,560 | 0.5% | 62.0% |
+| POP_TOP LOAD_FAST | 3,565,800 | 0.5% | 62.5% |
+| LOAD_ATTR_INSTANCE_VALUE LOAD_ATTR_METHOD_NO_DICT | 3,544,200 | 0.5% | 63.0% |
+| ENTER_EXECUTOR CALL_PY_EXACT_ARGS | 3,419,280 | 0.5% | 63.5% |
+| LOAD_FAST LOAD_ATTR_PROPERTY | 3,281,840 | 0.5% | 64.0% |
+| LOAD_FAST_LOAD_FAST LOAD_ATTR_INSTANCE_VALUE | 3,223,440 | 0.5% | 64.5% |
+| POP_JUMP_IF_FALSE LOAD_FAST_LOAD_FAST | 3,188,560 | 0.5% | 65.0% |
+| LOAD_GLOBAL_MODULE LOAD_CONST | 3,170,040 | 0.5% | 65.4% |
+| JUMP_FORWARD STORE_FAST | 3,112,760 | 0.5% | 65.9% |
+| STORE_FAST LOAD_FAST_LOAD_FAST | 2,930,800 | 0.4% | 66.3% |
+| POP_TOP RETURN_CONST | 2,839,680 | 0.4% | 66.8% |
+| RETURN_CONST POP_TOP | 2,828,400 | 0.4% | 67.2% |
+| STORE_FAST JUMP_FORWARD | 2,811,720 | 0.4% | 67.6% |
+| LOAD_CONST LOAD_CONST | 2,787,000 | 0.4% | 68.0% |
+| LOAD_CONST STORE_FAST | 2,660,160 | 0.4% | 68.4% |
+| BINARY_SUBSCR_DICT LOAD_FAST | 2,484,240 | 0.4% | 68.8% |
+| LOAD_ATTR_SLOT LOAD_ATTR_INSTANCE_VALUE | 2,436,240 | 0.4% | 69.1% |
+| JUMP_FORWARD LOAD_FAST | 2,322,120 | 0.3% | 69.5% |
+| LOAD_FAST STORE_FAST | 2,293,640 | 0.3% | 69.8% |
+| LOAD_FAST POP_JUMP_IF_NOT_NONE | 2,257,800 | 0.3% | 70.2% |
+| COMPARE_OP_INT POP_JUMP_IF_TRUE | 2,232,360 | 0.3% | 70.5% |
+| TO_BOOL_ALWAYS_TRUE POP_JUMP_IF_FALSE | 2,202,320 | 0.3% | 70.8% |
+| LOAD_FAST TO_BOOL_ALWAYS_TRUE | 2,202,320 | 0.3% | 71.2% |
+| LOAD_FAST CALL_PY_EXACT_ARGS | 2,121,360 | 0.3% | 71.5% |
+| LOAD_ATTR_METHOD_WITH_VALUES LOAD_FAST | 2,113,400 | 0.3% | 71.8% |
+| STORE_FAST LOAD_CONST | 2,077,680 | 0.3% | 72.1% |
+| RETURN_VALUE JUMP_FORWARD | 2,075,280 | 0.3% | 72.4% |
+| BINARY_SUBSCR_DICT LOAD_GLOBAL_MODULE | 1,960,920 | 0.3% | 72.7% |
+| POP_JUMP_IF_NOT_NONE LOAD_FAST | 1,922,400 | 0.3% | 73.0% |
+| LOAD_ATTR_SLOT LOAD_ATTR_METHOD_WITH_VALUES | 1,870,400 | 0.3% | 73.3% |
+| COMPARE_OP POP_JUMP_IF_FALSE | 1,855,220 | 0.3% | 73.5% |
+| LOAD_FAST_LOAD_FAST STORE_ATTR_INSTANCE_VALUE | 1,826,520 | 0.3% | 73.8% |
+| LOAD_ATTR_INSTANCE_VALUE CALL_LEN | 1,825,800 | 0.3% | 74.1% |
+| LOAD_CONST LOAD_FAST | 1,808,520 | 0.3% | 74.3% |
+| BINARY_OP_ADD_UNICODE SWAP | 1,786,440 | 0.3% | 74.6% |
+| CALL_BOUND_METHOD_EXACT_ARGS RESUME_CHECK | 1,715,140 | 0.3% | 74.9% |
+| CALL_LEN LOAD_CONST | 1,688,880 | 0.3% | 75.1% |
+| POP_JUMP_IF_TRUE LOAD_FAST_LOAD_FAST | 1,680,480 | 0.2% | 75.4% |
+| LOAD_ATTR_INSTANCE_VALUE TO_BOOL | 1,640,160 | 0.2% | 75.6% |
+| BINARY_SUBSCR_DICT LOAD_CONST | 1,636,800 | 0.2% | 75.9% |
+| LOAD_FAST CALL_METHOD_DESCRIPTOR_O | 1,608,480 | 0.2% | 76.1% |
+| LOAD_GLOBAL_MODULE IS_OP | 1,593,960 | 0.2% | 76.3% |
+| IS_OP POP_JUMP_IF_FALSE | 1,593,960 | 0.2% | 76.6% |
+| LOAD_ATTR_METHOD_NO_DICT CALL_METHOD_DESCRIPTOR_NOARGS | 1,593,480 | 0.2% | 76.8% |
+| CALL_PY_WITH_DEFAULTS RESUME_CHECK | 1,528,800 | 0.2% | 77.0% |
+| POP_JUMP_IF_FALSE RETURN_CONST | 1,515,240 | 0.2% | 77.3% |
+| CALL_ISINSTANCE TO_BOOL_BOOL | 1,488,840 | 0.2% | 77.5% |
+| CALL_METHOD_DESCRIPTOR_FAST STORE_FAST | 1,485,480 | 0.2% | 77.7% |
+| LOAD_CONST COMPARE_OP_INT | 1,470,760 | 0.2% | 77.9% |
+| LOAD_FAST LOAD_ATTR_METHOD_WITH_VALUES | 1,398,480 | 0.2% | 78.1% |
+| SWAP SWAP | 1,397,640 | 0.2% | 78.3% |
+| LOAD_CONST COPY | 1,397,640 | 0.2% | 78.5% |
+| COPY COPY | 1,397,640 | 0.2% | 78.7% |
+| TO_BOOL POP_JUMP_IF_FALSE | 1,377,600 | 0.2% | 79.0% |
+| TO_BOOL_LIST POP_JUMP_IF_FALSE | 1,357,520 | 0.2% | 79.2% |
+
+
+</details>
+
+## Predecessor/Successor Pairs
+
+<details>
+<summary> Top 5 predecessors and successors of each opcode </summary>
+
+### BINARY_SLICE
+
+<details>
+<summary> Successors and predecessors for BINARY_SLICE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 795,480 | 68.9% |
+| LOAD_CONST | 353,400 | 30.6% |
+| BINARY_OP_ADD_INT | 5,920 | 0.5% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| CALL_LIST_APPEND | 794,640 | 68.8% |
+| GET_ITER | 342,600 | 29.7% |
+| CALL_METHOD_DESCRIPTOR_O | 6,240 | 0.5% |
+| RETURN_VALUE | 4,800 | 0.4% |
+| LOAD_FAST | 3,360 | 0.3% |
+
+
+</details>
+
+### CACHE
+
+<details>
+<summary> Successors and predecessors for CACHE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 364,920 | 99.9% |
+| COPY_FREE_VARS | 360 | 0.1% |
+| RETURN_GENERATOR | 120 | 0.0% |
+
+
+</details>
+
+### BINARY_OP_INPLACE_ADD_UNICODE
+
+<details>
+<summary> Successors and predecessors for BINARY_OP_INPLACE_ADD_UNICODE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CALL_METHOD_DESCRIPTOR_O | 3,120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| JUMP_FORWARD | 3,120 | 100.0% |
+
+
+</details>
+
+### BINARY_SUBSCR
+
+<details>
+<summary> Successors and predecessors for BINARY_SUBSCR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 4,041,080 | 80.8% |
+| BUILD_SLICE | 570,840 | 11.4% |
+| LOAD_FAST | 389,320 | 7.8% |
+| BINARY_SUBSCR | 1,980 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| JUMP_FORWARD | 1,037,480 | 20.7% |
+| STORE_FAST | 899,280 | 18.0% |
+| LOAD_CONST | 898,680 | 18.0% |
+| GET_ITER | 570,840 | 11.4% |
+| LOAD_ATTR_PROPERTY | 398,520 | 8.0% |
+
+
+</details>
+
+### END_FOR
+
+<details>
+<summary> Successors and predecessors for END_FOR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_CONST | 120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 120 | 100.0% |
+
+
+</details>
+
+### EXIT_INIT_CHECK
+
+<details>
+<summary> Successors and predecessors for EXIT_INIT_CHECK </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_CONST | 347,520 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_VALUE | 347,520 | 100.0% |
+
+
+</details>
+
+### FORMAT_SIMPLE
+
+<details>
+<summary> Successors and predecessors for FORMAT_SIMPLE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CONVERT_VALUE | 668,640 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 334,320 | 50.0% |
+| BUILD_STRING | 334,320 | 50.0% |
+
+
+</details>
+
+### GET_ITER
+
+<details>
+<summary> Successors and predecessors for GET_ITER </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| BINARY_SUBSCR | 570,840 | 33.7% |
+| CALL_BUILTIN_CLASS | 566,880 | 33.4% |
+| BINARY_SLICE | 342,600 | 20.2% |
+| CALL_METHOD_DESCRIPTOR_NOARGS | 212,880 | 12.6% |
+| LOAD_GLOBAL_MODULE | 1,200 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| FOR_ITER_LIST | 821,280 | 48.4% |
+| FOR_ITER | 778,080 | 45.9% |
+| EXTENDED_ARG | 92,280 | 5.4% |
+| FOR_ITER_TUPLE | 1,800 | 0.1% |
+| FOR_ITER_RANGE | 1,740 | 0.1% |
+
+
+</details>
+
+### INTERPRETER_EXIT
+
+<details>
+<summary> Successors and predecessors for INTERPRETER_EXIT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_CONST | 338,880 | 92.7% |
+| RETURN_VALUE | 26,400 | 7.2% |
+| RETURN_GENERATOR | 120 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+
+
+</details>
+
+### NOP
+
+<details>
+<summary> Successors and predecessors for NOP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 827,400 | 49.9% |
+| RESUME_CHECK | 825,000 | 49.7% |
+| JUMP_FORWARD | 3,360 | 0.2% |
+| POP_JUMP_IF_TRUE | 1,920 | 0.1% |
+| POP_JUMP_IF_NONE | 360 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 829,920 | 50.0% |
+| LOAD_GLOBAL_MODULE | 828,000 | 49.9% |
+| LOAD_GLOBAL_BUILTIN | 240 | 0.0% |
+| LOAD_DEREF | 180 | 0.0% |
+
+
+</details>
+
+### POP_TOP
+
+<details>
+<summary> Successors and predecessors for POP_TOP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_CONST | 2,828,400 | 40.6% |
+| CALL_METHOD_DESCRIPTOR_O | 1,290,960 | 18.5% |
+| RESUME_CHECK | 1,037,520 | 14.9% |
+| POP_JUMP_IF_FALSE | 452,400 | 6.5% |
+| CALL | 335,220 | 4.8% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 3,565,800 | 51.2% |
+| RETURN_CONST | 2,839,680 | 40.7% |
+| LOAD_FAST_LOAD_FAST | 335,040 | 4.8% |
+| RETURN_VALUE | 126,720 | 1.8% |
+| JUMP_FORWARD | 99,120 | 1.4% |
+
+
+</details>
+
+### PUSH_NULL
+
+<details>
+<summary> Successors and predecessors for PUSH_NULL </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 654,720 | 99.3% |
+| LOAD_FAST_LOAD_FAST | 2,760 | 0.4% |
+| LOAD_ATTR_MODULE | 880 | 0.1% |
+| LOAD_ATTR | 620 | 0.1% |
+| LOAD_SUPER_ATTR_ATTR | 240 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 655,860 | 99.5% |
+| LOAD_FAST_LOAD_FAST | 2,760 | 0.4% |
+| CALL_BOUND_METHOD_EXACT_ARGS | 360 | 0.1% |
+| CALL | 300 | 0.0% |
+
+
+</details>
+
+### RETURN_GENERATOR
+
+<details>
+<summary> Successors and predecessors for RETURN_GENERATOR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CACHE | 120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| INTERPRETER_EXIT | 120 | 100.0% |
+
+
+</details>
+
+### RETURN_VALUE
+
+<details>
+<summary> Successors and predecessors for RETURN_VALUE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 6,665,700 | 57.7% |
+| LOAD_ATTR_INSTANCE_VALUE | 3,683,160 | 31.9% |
+| RETURN_CONST | 653,880 | 5.7% |
+| EXIT_INIT_CHECK | 347,520 | 3.0% |
+| POP_TOP | 126,720 | 1.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 6,732,120 | 58.3% |
+| JUMP_FORWARD | 2,075,280 | 18.0% |
+| LOAD_FAST | 632,760 | 5.5% |
+| BINARY_OP_ADD_UNICODE | 569,160 | 4.9% |
+| TO_BOOL_BOOL | 420,360 | 3.6% |
+
+
+</details>
+
+### TO_BOOL
+
+<details>
+<summary> Successors and predecessors for TO_BOOL </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 1,640,160 | 82.7% |
+| LOAD_FAST | 337,800 | 17.0% |
+| COPY | 3,960 | 0.2% |
+| TO_BOOL | 660 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 1,377,600 | 69.5% |
+| POP_JUMP_IF_TRUE | 604,320 | 30.5% |
+| TO_BOOL | 660 | 0.0% |
+
+
+</details>
+
+### BINARY_OP
+
+<details>
+<summary> Successors and predecessors for BINARY_OP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CONTAINS_OP | 865,320 | 99.0% |
+| LOAD_CONST | 6,120 | 0.7% |
+| LOAD_FAST | 1,820 | 0.2% |
+| BINARY_OP | 420 | 0.0% |
+| CALL_BUILTIN_CLASS | 360 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| TO_BOOL_BOOL | 865,320 | 99.0% |
+| COMPARE_OP | 6,120 | 0.7% |
+| STORE_FAST | 1,920 | 0.2% |
+| BINARY_OP | 420 | 0.0% |
+| CALL_PY_EXACT_ARGS | 360 | 0.0% |
+
+
+</details>
+
+### BUILD_CONST_KEY_MAP
+
+<details>
+<summary> Successors and predecessors for BUILD_CONST_KEY_MAP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 1,134,360 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 654,240 | 57.7% |
+| CALL_METHOD_DESCRIPTOR_O | 383,280 | 33.8% |
+| STORE_FAST | 96,480 | 8.5% |
+| RETURN_VALUE | 360 | 0.0% |
+
+
+</details>
+
+### BUILD_LIST
+
+<details>
+<summary> Successors and predecessors for BUILD_LIST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 951,600 | 34.1% |
+| STORE_ATTR_INSTANCE_VALUE | 671,040 | 24.1% |
+| LOAD_FAST | 652,920 | 23.4% |
+| LOAD_CONST | 505,920 | 18.2% |
+| RETURN_VALUE | 3,720 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 955,560 | 34.3% |
+| LOAD_CONST | 943,080 | 33.8% |
+| LOAD_FAST | 671,640 | 24.1% |
+| CALL_LIST_APPEND | 215,880 | 7.7% |
+| CALL_BUILTIN_CLASS | 360 | 0.0% |
+
+
+</details>
+
+### BUILD_MAP
+
+<details>
+<summary> Successors and predecessors for BUILD_MAP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| STORE_ATTR_SLOT | 5,520 | 78.0% |
+| BUILD_TUPLE | 480 | 6.8% |
+| POP_JUMP_IF_NOT_NONE | 360 | 5.1% |
+| LOAD_FAST | 360 | 5.1% |
+| SWAP | 120 | 1.7% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 6,480 | 91.5% |
+| STORE_FAST | 480 | 6.8% |
+| SWAP | 120 | 1.7% |
+
+
+</details>
+
+### BUILD_SLICE
+
+<details>
+<summary> Successors and predecessors for BUILD_SLICE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 570,840 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| BINARY_SUBSCR | 570,840 | 100.0% |
+
+
+</details>
+
+### BUILD_STRING
+
+<details>
+<summary> Successors and predecessors for BUILD_STRING </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| FORMAT_SIMPLE | 334,320 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 334,320 | 100.0% |
+
+
+</details>
+
+### BUILD_TUPLE
+
+<details>
+<summary> Successors and predecessors for BUILD_TUPLE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST_LOAD_FAST | 826,320 | 50.5% |
+| LOAD_FAST | 469,320 | 28.7% |
+| LOAD_ATTR_INSTANCE_VALUE | 334,680 | 20.5% |
+| LOAD_CONST | 3,840 | 0.2% |
+| LOAD_ATTR | 720 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| BINARY_SUBSCR_DICT | 824,520 | 50.4% |
+| STORE_FAST | 469,440 | 28.7% |
+| LOAD_FAST | 334,920 | 20.5% |
+| CONTAINS_OP | 3,120 | 0.2% |
+| RETURN_VALUE | 2,040 | 0.1% |
+
+
+</details>
+
+### CALL
+
+<details>
+<summary> Successors and predecessors for CALL </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 1,171,080 | 76.7% |
+| RETURN_VALUE | 336,600 | 22.0% |
+| LOAD_FAST | 11,540 | 0.8% |
+| ENTER_EXECUTOR | 5,280 | 0.3% |
+| CALL | 1,040 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 831,060 | 54.4% |
+| LOAD_FAST | 335,460 | 22.0% |
+| POP_TOP | 335,220 | 21.9% |
+| RETURN_VALUE | 13,440 | 0.9% |
+| TO_BOOL_BOOL | 7,920 | 0.5% |
+
+
+</details>
+
+### CALL_FUNCTION_EX
+
+<details>
+<summary> Successors and predecessors for CALL_FUNCTION_EX </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| DICT_MERGE | 960 | 94.1% |
+| LOAD_FAST | 60 | 5.9% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_TOP | 360 | 35.3% |
+| RETURN_VALUE | 240 | 23.5% |
+| COPY_FREE_VARS | 180 | 17.6% |
+| RESUME_CHECK | 120 | 11.8% |
+| LOAD_FAST | 120 | 11.8% |
+
+
+</details>
+
+### CALL_INTRINSIC_1
+
+<details>
+<summary> Successors and predecessors for CALL_INTRINSIC_1 </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LIST_EXTEND | 120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| BUILD_MAP | 120 | 100.0% |
+
+
+</details>
+
+### CALL_KW
+
+<details>
+<summary> Successors and predecessors for CALL_KW </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 374,640 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 374,520 | 100.0% |
+| STORE_FAST | 120 | 0.0% |
+
+
+</details>
+
+### COMPARE_OP
+
+<details>
+<summary> Successors and predecessors for COMPARE_OP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 1,311,360 | 57.7% |
+| LOAD_GLOBAL_MODULE | 672,000 | 29.6% |
+| LOAD_FAST_LOAD_FAST | 127,340 | 5.6% |
+| BINARY_SUBSCR | 126,720 | 5.6% |
+| LOAD_ATTR_INSTANCE_VALUE | 28,200 | 1.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 1,855,220 | 81.6% |
+| POP_JUMP_IF_TRUE | 417,480 | 18.4% |
+| COMPARE_OP | 1,060 | 0.0% |
+| COMPARE_OP_STR | 260 | 0.0% |
+| COMPARE_OP_INT | 20 | 0.0% |
+
+
+</details>
+
+### CONTAINS_OP
+
+<details>
+<summary> Successors and predecessors for CONTAINS_OP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_GLOBAL_MODULE | 4,634,280 | 64.1% |
+| LOAD_FAST | 962,880 | 13.3% |
+| LOAD_ATTR_SLOT | 654,000 | 9.1% |
+| LOAD_ATTR_INSTANCE_VALUE | 649,080 | 9.0% |
+| CALL_BUILTIN_CLASS | 205,920 | 2.9% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 6,028,240 | 83.4% |
+| BINARY_OP | 865,320 | 12.0% |
+| POP_JUMP_IF_TRUE | 327,480 | 4.5% |
+| RETURN_VALUE | 3,120 | 0.0% |
+
+
+</details>
+
+### CONVERT_VALUE
+
+<details>
+<summary> Successors and predecessors for CONVERT_VALUE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 668,640 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| FORMAT_SIMPLE | 668,640 | 100.0% |
+
+
+</details>
+
+### COPY
+
+<details>
+<summary> Successors and predecessors for COPY </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 1,397,640 | 43.2% |
+| COPY | 1,397,640 | 43.2% |
+| BINARY_SUBSCR | 248,640 | 7.7% |
+| LOAD_ATTR_INSTANCE_VALUE | 138,600 | 4.3% |
+| COMPARE_OP_STR | 28,200 | 0.9% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| COPY | 1,397,640 | 43.2% |
+| BINARY_SUBSCR_DICT | 941,280 | 29.1% |
+| BINARY_SUBSCR_LIST_INT | 456,360 | 14.1% |
+| LOAD_ATTR | 383,280 | 11.9% |
+| TO_BOOL_BOOL | 28,200 | 0.9% |
+
+
+</details>
+
+### COPY_FREE_VARS
+
+<details>
+<summary> Successors and predecessors for COPY_FREE_VARS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CALL_ALLOC_AND_ENTER_INIT | 335,160 | 99.7% |
+| CALL_PY_WITH_DEFAULTS | 360 | 0.1% |
+| CACHE | 360 | 0.1% |
+| CALL_FUNCTION_EX | 180 | 0.1% |
+| CALL_PY_EXACT_ARGS | 120 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 336,300 | 100.0% |
+
+
+</details>
+
+### DICT_MERGE
+
+<details>
+<summary> Successors and predecessors for DICT_MERGE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 960 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| CALL_FUNCTION_EX | 960 | 100.0% |
+
+
+</details>
+
+### ENTER_EXECUTOR
+
+<details>
+<summary> Successors and predecessors for ENTER_EXECUTOR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 5,160,780 | 96.4% |
+| POP_JUMP_IF_TRUE | 191,160 | 3.6% |
+| CALL_LIST_APPEND | 2,160 | 0.0% |
+| STORE_FAST | 1,320 | 0.0% |
+| EXTENDED_ARG | 140 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| CALL_PY_EXACT_ARGS | 3,419,280 | 63.8% |
+| LOAD_FAST | 1,167,840 | 21.8% |
+| CALL_BOUND_METHOD_EXACT_ARGS | 693,240 | 12.9% |
+| LOAD_GLOBAL_BUILTIN | 56,640 | 1.1% |
+| RETURN_CONST | 6,240 | 0.1% |
+
+
+</details>
+
+### EXTENDED_ARG
+
+<details>
+<summary> Successors and predecessors for EXTENDED_ARG </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_TRUE | 1,037,520 | 27.4% |
+| LOAD_FAST | 1,037,520 | 27.4% |
+| JUMP_BACKWARD | 1,037,520 | 27.4% |
+| STORE_FAST | 228,120 | 6.0% |
+| STORE_ATTR_INSTANCE_VALUE | 215,880 | 5.7% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| JUMP_BACKWARD | 1,037,740 | 27.5% |
+| FOR_ITER_GEN | 1,037,640 | 27.5% |
+| POP_JUMP_IF_NONE | 1,037,520 | 27.4% |
+| JUMP_FORWARD | 444,000 | 11.7% |
+| POP_JUMP_IF_FALSE | 130,560 | 3.5% |
+
+
+</details>
+
+### FOR_ITER
+
+<details>
+<summary> Successors and predecessors for FOR_ITER </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| JUMP_BACKWARD | 969,360 | 55.5% |
+| GET_ITER | 778,080 | 44.5% |
+| FOR_ITER | 540 | 0.0% |
+| SWAP | 120 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 1,316,040 | 75.3% |
+| UNPACK_SEQUENCE_TWO_TUPLE | 218,640 | 12.5% |
+| RETURN_CONST | 212,640 | 12.2% |
+| FOR_ITER | 540 | 0.0% |
+| SWAP | 120 | 0.0% |
+
+
+</details>
+
+### IMPORT_FROM
+
+<details>
+<summary> Successors and predecessors for IMPORT_FROM </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| IMPORT_NAME | 120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 120 | 100.0% |
+
+
+</details>
+
+### IMPORT_NAME
+
+<details>
+<summary> Successors and predecessors for IMPORT_NAME </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| IMPORT_FROM | 120 | 100.0% |
+
+
+</details>
+
+### IS_OP
+
+<details>
+<summary> Successors and predecessors for IS_OP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_GLOBAL_MODULE | 1,593,960 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 1,593,960 | 100.0% |
+
+
+</details>
+
+### JUMP_BACKWARD
+
+<details>
+<summary> Successors and predecessors for JUMP_BACKWARD </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| EXTENDED_ARG | 1,037,740 | 51.7% |
+| POP_JUMP_IF_TRUE | 751,320 | 37.4% |
+| STORE_SUBSCR_DICT | 215,880 | 10.7% |
+| MAP_ADD | 2,760 | 0.1% |
+| POP_JUMP_IF_FALSE | 660 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| EXTENDED_ARG | 1,037,520 | 51.7% |
+| FOR_ITER | 969,360 | 48.3% |
+| LOAD_FAST_LOAD_FAST | 400 | 0.0% |
+| FOR_ITER_TUPLE | 400 | 0.0% |
+| FOR_ITER_LIST | 360 | 0.0% |
+
+
+</details>
+
+### JUMP_FORWARD
+
+<details>
+<summary> Successors and predecessors for JUMP_FORWARD </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 2,811,720 | 38.5% |
+| RETURN_VALUE | 2,075,280 | 28.4% |
+| BINARY_SUBSCR | 1,037,480 | 14.2% |
+| STORE_ATTR_INSTANCE_VALUE | 794,520 | 10.9% |
+| EXTENDED_ARG | 444,000 | 6.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 3,112,760 | 42.6% |
+| LOAD_FAST | 2,322,120 | 31.8% |
+| LOAD_FAST_LOAD_FAST | 1,037,880 | 14.2% |
+| LOAD_CONST | 825,000 | 11.3% |
+| NOP | 3,360 | 0.0% |
+
+
+</details>
+
+### LIST_EXTEND
+
+<details>
+<summary> Successors and predecessors for LIST_EXTEND </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| CALL_INTRINSIC_1 | 120 | 100.0% |
+
+
+</details>
+
+### LOAD_ATTR
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 3,748,440 | 73.4% |
+| LOAD_ATTR_INSTANCE_VALUE | 723,360 | 14.2% |
+| COPY | 383,280 | 7.5% |
+| BINARY_SUBSCR | 248,640 | 4.9% |
+| LOAD_ATTR | 3,280 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 4,014,480 | 78.6% |
+| LOAD_FAST_LOAD_FAST | 364,440 | 7.1% |
+| TO_BOOL_NONE | 353,680 | 6.9% |
+| STORE_FAST | 334,320 | 6.5% |
+| TO_BOOL_STR | 29,600 | 0.6% |
+
+
+</details>
+
+### LOAD_CONST
+
+<details>
+<summary> Successors and predecessors for LOAD_CONST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 23,818,780 | 49.6% |
+| LOAD_ATTR_INSTANCE_VALUE | 5,860,160 | 12.2% |
+| LOAD_GLOBAL_MODULE | 3,170,040 | 6.6% |
+| LOAD_CONST | 2,787,000 | 5.8% |
+| STORE_FAST | 2,077,680 | 4.3% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| BINARY_SUBSCR_DICT | 12,036,480 | 25.1% |
+| COMPARE_OP_STR | 9,187,440 | 19.1% |
+| BINARY_OP_ADD_INT | 5,302,480 | 11.0% |
+| BINARY_SUBSCR | 4,041,080 | 8.4% |
+| LOAD_CONST | 2,787,000 | 5.8% |
+
+
+</details>
+
+### LOAD_DEREF
+
+<details>
+<summary> Successors and predecessors for LOAD_DEREF </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| STORE_ATTR_INSTANCE_VALUE | 334,680 | 99.5% |
+| RESUME_CHECK | 960 | 0.3% |
+| LOAD_GLOBAL_BUILTIN | 240 | 0.1% |
+| NOP | 180 | 0.1% |
+| POP_JUMP_IF_FALSE | 120 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_MODULE | 335,160 | 99.6% |
+| LOAD_FAST | 480 | 0.1% |
+| LOAD_ATTR | 360 | 0.1% |
+| TO_BOOL_BOOL | 120 | 0.0% |
+| CONTAINS_OP | 120 | 0.0% |
+
+
+</details>
+
+### LOAD_FAST
+
+<details>
+<summary> Successors and predecessors for LOAD_FAST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 32,204,200 | 20.6% |
+| STORE_FAST | 30,189,680 | 19.3% |
+| RESUME_CHECK | 19,082,400 | 12.2% |
+| LOAD_ATTR_INSTANCE_VALUE | 16,098,720 | 10.3% |
+| STORE_ATTR_INSTANCE_VALUE | 6,174,480 | 3.9% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 53,532,600 | 34.2% |
+| LOAD_CONST | 23,818,780 | 15.2% |
+| STORE_ATTR_INSTANCE_VALUE | 10,886,640 | 7.0% |
+| LOAD_GLOBAL_MODULE | 6,808,320 | 4.4% |
+| RETURN_VALUE | 6,665,700 | 4.3% |
+
+
+</details>
+
+### LOAD_FAST_AND_CLEAR
+
+<details>
+<summary> Successors and predecessors for LOAD_FAST_AND_CLEAR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST_AND_CLEAR | 120 | 50.0% |
+| GET_ITER | 120 | 50.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| SWAP | 120 | 50.0% |
+| LOAD_FAST_AND_CLEAR | 120 | 50.0% |
+
+
+</details>
+
+### LOAD_FAST_CHECK
+
+<details>
+<summary> Successors and predecessors for LOAD_FAST_CHECK </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_NONE | 1,037,520 | 99.7% |
+| LOAD_FAST | 3,120 | 0.3% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 1,037,520 | 99.7% |
+| LOAD_CONST | 3,120 | 0.3% |
+
+
+</details>
+
+### LOAD_FAST_LOAD_FAST
+
+<details>
+<summary> Successors and predecessors for LOAD_FAST_LOAD_FAST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 3,188,560 | 25.6% |
+| STORE_FAST | 2,930,800 | 23.6% |
+| POP_JUMP_IF_TRUE | 1,680,480 | 13.5% |
+| JUMP_FORWARD | 1,037,880 | 8.3% |
+| LOAD_GLOBAL_MODULE | 836,640 | 6.7% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| COMPARE_OP_INT | 3,831,240 | 30.8% |
+| LOAD_ATTR_INSTANCE_VALUE | 3,223,440 | 25.9% |
+| STORE_ATTR_INSTANCE_VALUE | 1,826,520 | 14.7% |
+| LOAD_ATTR_SLOT | 1,034,880 | 8.3% |
+| BUILD_TUPLE | 826,320 | 6.6% |
+
+
+</details>
+
+### LOAD_GLOBAL
+
+<details>
+<summary> Successors and predecessors for LOAD_GLOBAL </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_VALUE | 40 | 50.0% |
+| RESUME_CHECK | 20 | 25.0% |
+| POP_JUMP_IF_FALSE | 20 | 25.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_GLOBAL_MODULE | 40 | 50.0% |
+| LOAD_GLOBAL_BUILTIN | 20 | 25.0% |
+| LOAD_ATTR | 20 | 25.0% |
+
+
+</details>
+
+### MAP_ADD
+
+<details>
+<summary> Successors and predecessors for MAP_ADD </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CALL | 2,760 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| JUMP_BACKWARD | 2,760 | 100.0% |
+
+
+</details>
+
+### POP_JUMP_IF_FALSE
+
+<details>
+<summary> Successors and predecessors for POP_JUMP_IF_FALSE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| COMPARE_OP_INT | 11,631,180 | 25.9% |
+| COMPARE_OP_STR | 9,661,540 | 21.5% |
+| TO_BOOL_BOOL | 8,998,320 | 20.1% |
+| CONTAINS_OP | 6,028,240 | 13.4% |
+| TO_BOOL_ALWAYS_TRUE | 2,202,320 | 4.9% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 32,204,200 | 71.8% |
+| ENTER_EXECUTOR | 5,160,780 | 11.5% |
+| LOAD_FAST_LOAD_FAST | 3,188,560 | 7.1% |
+| RETURN_CONST | 1,515,240 | 3.4% |
+| LOAD_GLOBAL_MODULE | 1,129,920 | 2.5% |
+
+
+</details>
+
+### POP_JUMP_IF_NONE
+
+<details>
+<summary> Successors and predecessors for POP_JUMP_IF_NONE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 1,045,920 | 50.2% |
+| EXTENDED_ARG | 1,037,520 | 49.8% |
+| BINARY_SUBSCR_TUPLE_INT | 480 | 0.0% |
+| LOAD_ATTR_INSTANCE_VALUE | 120 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 1,043,280 | 50.1% |
+| LOAD_FAST_CHECK | 1,037,520 | 49.8% |
+| LOAD_FAST_LOAD_FAST | 1,320 | 0.1% |
+| RETURN_CONST | 600 | 0.0% |
+| NOP | 360 | 0.0% |
+
+
+</details>
+
+### POP_JUMP_IF_NOT_NONE
+
+<details>
+<summary> Successors and predecessors for POP_JUMP_IF_NOT_NONE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 2,257,800 | 100.0% |
+| LOAD_ATTR_INSTANCE_VALUE | 120 | 0.0% |
+| BINARY_SUBSCR_TUPLE_INT | 120 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 1,922,400 | 85.1% |
+| LOAD_CONST | 334,440 | 14.8% |
+| LOAD_GLOBAL_MODULE | 840 | 0.0% |
+| BUILD_MAP | 360 | 0.0% |
+
+
+</details>
+
+### POP_JUMP_IF_TRUE
+
+<details>
+<summary> Successors and predecessors for POP_JUMP_IF_TRUE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| TO_BOOL_BOOL | 4,076,880 | 42.5% |
+| COMPARE_OP_INT | 2,232,360 | 23.3% |
+| COMPARE_OP_STR | 1,172,040 | 12.2% |
+| TO_BOOL | 604,320 | 6.3% |
+| COMPARE_OP | 417,480 | 4.3% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 3,667,560 | 38.2% |
+| LOAD_FAST_LOAD_FAST | 1,680,480 | 17.5% |
+| EXTENDED_ARG | 1,037,520 | 10.8% |
+| LOAD_GLOBAL_BUILTIN | 986,760 | 10.3% |
+| JUMP_BACKWARD | 751,320 | 7.8% |
+
+
+</details>
+
+### RETURN_CONST
+
+<details>
+<summary> Successors and predecessors for RETURN_CONST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| STORE_ATTR_INSTANCE_VALUE | 3,845,640 | 37.3% |
+| POP_TOP | 2,839,680 | 27.6% |
+| POP_JUMP_IF_FALSE | 1,515,240 | 14.7% |
+| STORE_SUBSCR_DICT | 940,800 | 9.1% |
+| STORE_ATTR | 383,520 | 3.7% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| TO_BOOL_BOOL | 5,640,720 | 54.7% |
+| POP_TOP | 2,828,400 | 27.4% |
+| RETURN_VALUE | 653,880 | 6.3% |
+| STORE_FAST | 497,160 | 4.8% |
+| EXIT_INIT_CHECK | 347,520 | 3.4% |
+
+
+</details>
+
+### STORE_ATTR
+
+<details>
+<summary> Successors and predecessors for STORE_ATTR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| SWAP | 383,640 | 35.7% |
+| LOAD_FAST | 334,680 | 31.2% |
+| BINARY_SUBSCR | 221,520 | 20.6% |
+| LOAD_ATTR_INSTANCE_VALUE | 132,120 | 12.3% |
+| LOAD_FAST_LOAD_FAST | 720 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 688,920 | 64.2% |
+| RETURN_CONST | 383,520 | 35.7% |
+| STORE_ATTR | 480 | 0.0% |
+| LOAD_FAST_LOAD_FAST | 240 | 0.0% |
+
+
+</details>
+
+### STORE_FAST
+
+<details>
+<summary> Successors and predecessors for STORE_FAST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 6,856,920 | 16.5% |
+| RETURN_VALUE | 6,732,120 | 16.2% |
+| BINARY_SUBSCR_STR_INT | 5,163,120 | 12.4% |
+| BINARY_SUBSCR_DICT | 3,934,560 | 9.5% |
+| JUMP_FORWARD | 3,112,760 | 7.5% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 30,189,680 | 72.6% |
+| LOAD_FAST_LOAD_FAST | 2,930,800 | 7.0% |
+| JUMP_FORWARD | 2,811,720 | 6.8% |
+| LOAD_CONST | 2,077,680 | 5.0% |
+| LOAD_GLOBAL_BUILTIN | 1,237,080 | 3.0% |
+
+
+</details>
+
+### STORE_FAST_LOAD_FAST
+
+<details>
+<summary> Successors and predecessors for STORE_FAST_LOAD_FAST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| COPY | 10,320 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_SLOT | 5,760 | 55.8% |
+| STORE_ATTR_INSTANCE_VALUE | 4,560 | 44.2% |
+
+
+</details>
+
+### STORE_FAST_STORE_FAST
+
+<details>
+<summary> Successors and predecessors for STORE_FAST_STORE_FAST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| UNPACK_SEQUENCE_TWO_TUPLE | 696,720 | 99.6% |
+| UNPACK_SEQUENCE_LIST | 3,120 | 0.4% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_GLOBAL_BUILTIN | 684,480 | 97.8% |
+| LOAD_GLOBAL_MODULE | 7,440 | 1.1% |
+| LOAD_FAST_LOAD_FAST | 4,440 | 0.6% |
+| LOAD_FAST | 3,480 | 0.5% |
+
+
+</details>
+
+### SWAP
+
+<details>
+<summary> Successors and predecessors for SWAP </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| BINARY_OP_ADD_UNICODE | 1,786,440 | 53.9% |
+| SWAP | 1,397,640 | 42.1% |
+| LOAD_FAST | 128,400 | 3.9% |
+| BINARY_OP_SUBTRACT_INT | 3,600 | 0.1% |
+| BINARY_OP_ADD_INT | 360 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| SWAP | 1,397,640 | 42.1% |
+| STORE_SUBSCR_DICT | 941,280 | 28.4% |
+| STORE_SUBSCR_LIST_INT | 456,360 | 13.8% |
+| STORE_ATTR | 383,640 | 11.6% |
+| POP_TOP | 126,720 | 3.8% |
+
+
+</details>
+
+### YIELD_VALUE
+
+<details>
+<summary> Successors and predecessors for YIELD_VALUE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CALL_METHOD_DESCRIPTOR_NOARGS | 1,037,520 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 1,037,520 | 100.0% |
+
+
+</details>
+
+### BINARY_OP_ADD_INT
+
+<details>
+<summary> Successors and predecessors for BINARY_OP_ADD_INT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 5,302,480 | 99.9% |
+| LOAD_FAST | 1,920 | 0.0% |
+| CALL_LEN | 840 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 5,163,120 | 97.3% |
+| STORE_FAST | 129,120 | 2.4% |
+| BINARY_SLICE | 5,920 | 0.1% |
+| COPY | 4,560 | 0.1% |
+| BINARY_OP_SUBTRACT_INT | 1,680 | 0.0% |
+
+
+</details>
+
+### BINARY_OP_ADD_UNICODE
+
+<details>
+<summary> Successors and predecessors for BINARY_OP_ADD_UNICODE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 1,342,800 | 51.4% |
+| RETURN_VALUE | 569,160 | 21.8% |
+| BINARY_OP_ADD_UNICODE | 443,880 | 17.0% |
+| LOAD_FAST_LOAD_FAST | 255,360 | 9.8% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| SWAP | 1,786,440 | 68.4% |
+| BINARY_OP_ADD_UNICODE | 443,880 | 17.0% |
+| LOAD_CONST | 380,880 | 14.6% |
+
+
+</details>
+
+### BINARY_OP_SUBTRACT_FLOAT
+
+<details>
+<summary> Successors and predecessors for BINARY_OP_SUBTRACT_FLOAT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 40 | 66.7% |
+| BINARY_OP | 20 | 33.3% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 60 | 100.0% |
+
+
+</details>
+
+### BINARY_OP_SUBTRACT_INT
+
+<details>
+<summary> Successors and predecessors for BINARY_OP_SUBTRACT_INT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 393,360 | 99.6% |
+| BINARY_OP_ADD_INT | 1,680 | 0.4% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 390,960 | 99.0% |
+| SWAP | 3,600 | 0.9% |
+| LOAD_FAST | 480 | 0.1% |
+
+
+</details>
+
+### BINARY_SUBSCR_DICT
+
+<details>
+<summary> Successors and predecessors for BINARY_SUBSCR_DICT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 12,036,480 | 80.1% |
+| LOAD_FAST | 1,122,800 | 7.5% |
+| COPY | 941,280 | 6.3% |
+| BUILD_TUPLE | 824,520 | 5.5% |
+| BINARY_SUBSCR_DICT | 96,480 | 0.6% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 3,934,560 | 26.2% |
+| LOAD_FAST | 2,484,240 | 16.5% |
+| LOAD_GLOBAL_MODULE | 1,960,920 | 13.1% |
+| LOAD_CONST | 1,636,800 | 10.9% |
+| COMPARE_OP_INT | 1,307,280 | 8.7% |
+
+
+</details>
+
+### BINARY_SUBSCR_GETITEM
+
+<details>
+<summary> Successors and predecessors for BINARY_SUBSCR_GETITEM </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 11,520 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 11,520 | 100.0% |
+
+
+</details>
+
+### BINARY_SUBSCR_LIST_INT
+
+<details>
+<summary> Successors and predecessors for BINARY_SUBSCR_LIST_INT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| COPY | 456,360 | 65.8% |
+| LOAD_CONST | 229,800 | 33.1% |
+| LOAD_FAST | 7,440 | 1.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 459,480 | 66.2% |
+| LOAD_ATTR_METHOD_NO_DICT | 223,320 | 32.2% |
+| LOAD_GLOBAL_MODULE | 6,240 | 0.9% |
+| LOAD_CONST | 3,120 | 0.4% |
+| COMPARE_OP_STR | 1,200 | 0.2% |
+
+
+</details>
+
+### BINARY_SUBSCR_STR_INT
+
+<details>
+<summary> Successors and predecessors for BINARY_SUBSCR_STR_INT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 5,163,120 | 99.9% |
+| LOAD_ATTR_INSTANCE_VALUE | 3,600 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 5,163,120 | 99.9% |
+| LOAD_FAST | 3,600 | 0.1% |
+
+
+</details>
+
+### BINARY_SUBSCR_TUPLE_INT
+
+<details>
+<summary> Successors and predecessors for BINARY_SUBSCR_TUPLE_INT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 1,680 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 600 | 35.7% |
+| POP_JUMP_IF_NONE | 480 | 28.6% |
+| LOAD_ATTR_INSTANCE_VALUE | 240 | 14.3% |
+| STORE_FAST | 120 | 7.1% |
+| POP_JUMP_IF_NOT_NONE | 120 | 7.1% |
+
+
+</details>
+
+### CALL_ALLOC_AND_ENTER_INIT
+
+<details>
+<summary> Successors and predecessors for CALL_ALLOC_AND_ENTER_INIT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST_LOAD_FAST | 346,200 | 99.6% |
+| BINARY_SUBSCR_DICT | 480 | 0.1% |
+| LOAD_FAST | 360 | 0.1% |
+| LOAD_CONST | 240 | 0.1% |
+| LOAD_ATTR | 240 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| COPY_FREE_VARS | 335,160 | 96.4% |
+| RESUME_CHECK | 12,360 | 3.6% |
+
+
+</details>
+
+### CALL_BOUND_METHOD_EXACT_ARGS
+
+<details>
+<summary> Successors and predecessors for CALL_BOUND_METHOD_EXACT_ARGS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 845,760 | 48.8% |
+| ENTER_EXECUTOR | 693,240 | 40.0% |
+| LOAD_ATTR_INSTANCE_VALUE | 175,800 | 10.1% |
+| CALL_PY_EXACT_ARGS | 18,160 | 1.0% |
+| PUSH_NULL | 360 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 1,715,140 | 99.0% |
+| CALL_PY_EXACT_ARGS | 18,180 | 1.0% |
+
+
+</details>
+
+### CALL_BUILTIN_CLASS
+
+<details>
+<summary> Successors and predecessors for CALL_BUILTIN_CLASS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 565,200 | 51.0% |
+| LOAD_FAST | 334,240 | 30.2% |
+| LOAD_CONST | 206,040 | 18.6% |
+| CALL_LEN | 1,680 | 0.2% |
+| BUILD_LIST | 360 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| GET_ITER | 566,880 | 51.2% |
+| STORE_FAST | 334,380 | 30.2% |
+| CONTAINS_OP | 205,920 | 18.6% |
+| BINARY_OP | 360 | 0.0% |
+
+
+</details>
+
+### CALL_BUILTIN_FAST
+
+<details>
+<summary> Successors and predecessors for CALL_BUILTIN_FAST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 469,080 | 99.0% |
+| LOAD_FAST | 2,400 | 0.5% |
+| LOAD_ATTR_INSTANCE_VALUE | 1,560 | 0.3% |
+| LOAD_ATTR_SLOT | 360 | 0.1% |
+| CALL_BUILTIN_FAST | 360 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 470,640 | 99.3% |
+| UNPACK_SEQUENCE_TWO_TUPLE | 1,560 | 0.3% |
+| TO_BOOL_BOOL | 480 | 0.1% |
+| POP_TOP | 480 | 0.1% |
+| CALL_METHOD_DESCRIPTOR_FAST | 360 | 0.1% |
+
+
+</details>
+
+### CALL_BUILTIN_FAST_WITH_KEYWORDS
+
+<details>
+<summary> Successors and predecessors for CALL_BUILTIN_FAST_WITH_KEYWORDS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 7,440 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 7,440 | 100.0% |
+
+
+</details>
+
+### CALL_BUILTIN_O
+
+<details>
+<summary> Successors and predecessors for CALL_BUILTIN_O </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| BINARY_SUBSCR | 1,680 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 1,680 | 100.0% |
+
+
+</details>
+
+### CALL_ISINSTANCE
+
+<details>
+<summary> Successors and predecessors for CALL_ISINSTANCE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_GLOBAL_MODULE | 803,040 | 53.9% |
+| LOAD_GLOBAL_BUILTIN | 685,560 | 46.0% |
+| LOAD_ATTR_MODULE | 120 | 0.0% |
+| LOAD_ATTR | 120 | 0.0% |
+| CALL_TYPE_1 | 120 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| TO_BOOL_BOOL | 1,488,840 | 100.0% |
+| STORE_FAST | 120 | 0.0% |
+
+
+</details>
+
+### CALL_LEN
+
+<details>
+<summary> Successors and predecessors for CALL_LEN </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 1,825,800 | 65.7% |
+| LOAD_FAST | 939,120 | 33.8% |
+| LOAD_ATTR_SLOT | 6,120 | 0.2% |
+| LOAD_ATTR | 6,120 | 0.2% |
+| CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS | 1,680 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 1,688,880 | 60.8% |
+| TO_BOOL_INT | 383,280 | 13.8% |
+| COMPARE_OP_INT | 351,240 | 12.6% |
+| LOAD_GLOBAL_BUILTIN | 340,320 | 12.2% |
+| RETURN_VALUE | 6,120 | 0.2% |
+
+
+</details>
+
+### CALL_LIST_APPEND
+
+<details>
+<summary> Successors and predecessors for CALL_LIST_APPEND </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| BINARY_SLICE | 794,640 | 46.9% |
+| LOAD_FAST | 669,720 | 39.5% |
+| BUILD_LIST | 215,880 | 12.7% |
+| RETURN_VALUE | 11,760 | 0.7% |
+| ENTER_EXECUTOR | 3,000 | 0.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 897,960 | 53.0% |
+| LOAD_FAST_LOAD_FAST | 793,680 | 46.8% |
+| ENTER_EXECUTOR | 2,160 | 0.1% |
+| LOAD_GLOBAL_BUILTIN | 1,320 | 0.1% |
+
+
+</details>
+
+### CALL_METHOD_DESCRIPTOR_FAST
+
+<details>
+<summary> Successors and predecessors for CALL_METHOD_DESCRIPTOR_FAST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_METHOD_NO_DICT | 1,131,840 | 70.6% |
+| LOAD_ATTR_INSTANCE_VALUE | 340,200 | 21.2% |
+| LOAD_FAST | 129,000 | 8.0% |
+| LOAD_CONST | 960 | 0.1% |
+| CALL_BUILTIN_FAST | 360 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 1,485,480 | 92.7% |
+| LOAD_FAST | 92,160 | 5.7% |
+| POP_TOP | 15,840 | 1.0% |
+| RETURN_VALUE | 5,760 | 0.4% |
+| CALL_PY_EXACT_ARGS | 3,480 | 0.2% |
+
+
+</details>
+
+### CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS
+
+<details>
+<summary> Successors and predecessors for CALL_METHOD_DESCRIPTOR_FAST_WITH_KEYWORDS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 4,200 | 71.4% |
+| LOAD_FAST | 1,680 | 28.6% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 3,480 | 59.2% |
+| CALL_LEN | 1,680 | 28.6% |
+| RETURN_VALUE | 360 | 6.1% |
+| LOAD_ATTR_METHOD_NO_DICT | 360 | 6.1% |
+
+
+</details>
+
+### CALL_METHOD_DESCRIPTOR_NOARGS
+
+<details>
+<summary> Successors and predecessors for CALL_METHOD_DESCRIPTOR_NOARGS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_METHOD_NO_DICT | 1,593,480 | 100.0% |
+| LOAD_ATTR_METHOD_LAZY_DICT | 240 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| YIELD_VALUE | 1,037,520 | 65.1% |
+| POP_TOP | 334,320 | 21.0% |
+| GET_ITER | 212,880 | 13.4% |
+| LOAD_FAST | 3,960 | 0.2% |
+| COMPARE_OP_STR | 3,960 | 0.2% |
+
+
+</details>
+
+### CALL_METHOD_DESCRIPTOR_O
+
+<details>
+<summary> Successors and predecessors for CALL_METHOD_DESCRIPTOR_O </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 1,608,480 | 53.6% |
+| LOAD_GLOBAL_MODULE | 869,640 | 29.0% |
+| BUILD_CONST_KEY_MAP | 383,280 | 12.8% |
+| LOAD_FAST_LOAD_FAST | 126,720 | 4.2% |
+| BINARY_SLICE | 6,240 | 0.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_TOP | 1,290,960 | 43.0% |
+| LOAD_FAST | 869,640 | 29.0% |
+| STORE_FAST | 824,520 | 27.5% |
+| CALL_PY_EXACT_ARGS | 6,240 | 0.2% |
+| CALL_METHOD_DESCRIPTOR_O | 4,880 | 0.2% |
+
+
+</details>
+
+### CALL_PY_EXACT_ARGS
+
+<details>
+<summary> Successors and predecessors for CALL_PY_EXACT_ARGS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_METHOD_WITH_VALUES | 6,418,160 | 47.4% |
+| ENTER_EXECUTOR | 3,419,280 | 25.2% |
+| LOAD_FAST | 2,121,360 | 15.7% |
+| LOAD_ATTR_INSTANCE_VALUE | 864,120 | 6.4% |
+| LOAD_CONST | 456,480 | 3.4% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 13,474,420 | 99.5% |
+| CALL_PY_EXACT_ARGS | 54,400 | 0.4% |
+| CALL_BOUND_METHOD_EXACT_ARGS | 18,160 | 0.1% |
+| COPY_FREE_VARS | 120 | 0.0% |
+
+
+</details>
+
+### CALL_PY_WITH_DEFAULTS
+
+<details>
+<summary> Successors and predecessors for CALL_PY_WITH_DEFAULTS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 471,600 | 30.8% |
+| BINARY_SUBSCR_DICT | 397,800 | 26.0% |
+| LOAD_FAST | 386,600 | 25.3% |
+| RETURN_VALUE | 253,440 | 16.6% |
+| LOAD_ATTR_METHOD_WITH_VALUES | 19,080 | 1.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 1,528,800 | 100.0% |
+| COPY_FREE_VARS | 360 | 0.0% |
+
+
+</details>
+
+### CALL_TUPLE_1
+
+<details>
+<summary> Successors and predecessors for CALL_TUPLE_1 </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CALL_METHOD_DESCRIPTOR_NOARGS | 240 | 66.7% |
+| LOAD_FAST | 120 | 33.3% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 120 | 33.3% |
+| LOAD_GLOBAL_BUILTIN | 120 | 33.3% |
+| BUILD_TUPLE | 120 | 33.3% |
+
+
+</details>
+
+### CALL_TYPE_1
+
+<details>
+<summary> Successors and predecessors for CALL_TYPE_1 </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| CALL_ISINSTANCE | 120 | 100.0% |
+
+
+</details>
+
+### COMPARE_OP_INT
+
+<details>
+<summary> Successors and predecessors for COMPARE_OP_INT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 5,988,720 | 42.8% |
+| LOAD_FAST_LOAD_FAST | 3,831,240 | 27.4% |
+| LOAD_CONST | 1,470,760 | 10.5% |
+| BINARY_SUBSCR_DICT | 1,307,280 | 9.3% |
+| LOAD_FAST | 1,039,320 | 7.4% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 11,631,180 | 83.1% |
+| POP_JUMP_IF_TRUE | 2,232,360 | 16.0% |
+| EXTENDED_ARG | 126,720 | 0.9% |
+
+
+</details>
+
+### COMPARE_OP_STR
+
+<details>
+<summary> Successors and predecessors for COMPARE_OP_STR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 9,187,440 | 84.5% |
+| LOAD_ATTR_INSTANCE_VALUE | 1,037,640 | 9.5% |
+| BINARY_SUBSCR_DICT | 379,080 | 3.5% |
+| LOAD_FAST | 133,560 | 1.2% |
+| LOAD_FAST_LOAD_FAST | 98,260 | 0.9% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 9,661,540 | 88.9% |
+| POP_JUMP_IF_TRUE | 1,172,040 | 10.8% |
+| COPY | 28,200 | 0.3% |
+| STORE_FAST | 3,960 | 0.0% |
+| EXTENDED_ARG | 3,600 | 0.0% |
+
+
+</details>
+
+### FOR_ITER_GEN
+
+<details>
+<summary> Successors and predecessors for FOR_ITER_GEN </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| EXTENDED_ARG | 1,037,640 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 1,037,520 | 100.0% |
+| POP_TOP | 120 | 0.0% |
+
+
+</details>
+
+### FOR_ITER_LIST
+
+<details>
+<summary> Successors and predecessors for FOR_ITER_LIST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| GET_ITER | 821,280 | 89.9% |
+| EXTENDED_ARG | 92,160 | 10.1% |
+| JUMP_BACKWARD | 360 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 402,360 | 44.0% |
+| LOAD_FAST | 212,760 | 23.3% |
+| LOAD_GLOBAL_BUILTIN | 197,040 | 21.6% |
+| RETURN_CONST | 98,520 | 10.8% |
+| UNPACK_SEQUENCE_LIST | 3,120 | 0.3% |
+
+
+</details>
+
+### FOR_ITER_RANGE
+
+<details>
+<summary> Successors and predecessors for FOR_ITER_RANGE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| GET_ITER | 1,740 | 93.5% |
+| JUMP_BACKWARD | 120 | 6.5% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_CONST | 1,680 | 90.3% |
+| STORE_FAST | 120 | 6.5% |
+| LOAD_FAST | 60 | 3.2% |
+
+
+</details>
+
+### FOR_ITER_TUPLE
+
+<details>
+<summary> Successors and predecessors for FOR_ITER_TUPLE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| GET_ITER | 1,800 | 81.8% |
+| JUMP_BACKWARD | 400 | 18.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 1,840 | 83.6% |
+| UNPACK_SEQUENCE_TWO_TUPLE | 360 | 16.4% |
+
+
+</details>
+
+### LOAD_ATTR_CLASS
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_CLASS </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_GLOBAL_BUILTIN | 132,480 | 99.8% |
+| LOAD_GLOBAL_MODULE | 240 | 0.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST_LOAD_FAST | 132,480 | 99.8% |
+| LOAD_FAST | 240 | 0.2% |
+
+
+</details>
+
+### LOAD_ATTR_INSTANCE_VALUE
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_INSTANCE_VALUE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 53,532,600 | 84.5% |
+| LOAD_ATTR_INSTANCE_VALUE | 4,152,040 | 6.6% |
+| LOAD_FAST_LOAD_FAST | 3,223,440 | 5.1% |
+| LOAD_ATTR_SLOT | 2,436,240 | 3.8% |
+| COPY | 9,120 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 16,098,720 | 25.4% |
+| STORE_FAST | 6,856,920 | 10.8% |
+| LOAD_ATTR_METHOD_WITH_VALUES | 5,993,480 | 9.5% |
+| COMPARE_OP_INT | 5,988,720 | 9.5% |
+| LOAD_CONST | 5,860,160 | 9.2% |
+
+
+</details>
+
+### LOAD_ATTR_METHOD_LAZY_DICT
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_METHOD_LAZY_DICT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_VALUE | 5,760 | 65.8% |
+| LOAD_ATTR_INSTANCE_VALUE | 2,280 | 26.0% |
+| LOAD_FAST | 720 | 8.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 7,920 | 90.4% |
+| LOAD_CONST | 600 | 6.8% |
+| CALL_METHOD_DESCRIPTOR_NOARGS | 240 | 2.7% |
+
+
+</details>
+
+### LOAD_ATTR_METHOD_NO_DICT
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_METHOD_NO_DICT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 4,389,920 | 44.5% |
+| LOAD_ATTR_INSTANCE_VALUE | 3,544,200 | 35.9% |
+| BINARY_SUBSCR_DICT | 873,840 | 8.9% |
+| LOAD_CONST | 834,360 | 8.5% |
+| BINARY_SUBSCR_LIST_INT | 223,320 | 2.3% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 5,518,520 | 55.9% |
+| CALL_METHOD_DESCRIPTOR_NOARGS | 1,593,480 | 16.1% |
+| LOAD_GLOBAL_MODULE | 1,253,160 | 12.7% |
+| CALL_METHOD_DESCRIPTOR_FAST | 1,131,840 | 11.5% |
+| LOAD_CONST | 343,080 | 3.5% |
+
+
+</details>
+
+### LOAD_ATTR_METHOD_WITH_VALUES
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_METHOD_WITH_VALUES </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 5,993,480 | 62.4% |
+| LOAD_ATTR_SLOT | 1,870,400 | 19.5% |
+| LOAD_FAST | 1,398,480 | 14.6% |
+| BINARY_SUBSCR | 334,200 | 3.5% |
+| LOAD_GLOBAL_MODULE | 6,240 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| CALL_PY_EXACT_ARGS | 6,418,160 | 66.8% |
+| LOAD_FAST | 2,113,400 | 22.0% |
+| LOAD_CONST | 695,520 | 7.2% |
+| LOAD_GLOBAL_MODULE | 354,240 | 3.7% |
+| CALL_PY_WITH_DEFAULTS | 19,080 | 0.2% |
+
+
+</details>
+
+### LOAD_ATTR_MODULE
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_MODULE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_DEREF | 335,160 | 99.4% |
+| LOAD_GLOBAL_MODULE | 1,620 | 0.5% |
+| LOAD_FAST | 240 | 0.1% |
+| RETURN_VALUE | 120 | 0.0% |
+| LOAD_ATTR | 40 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 335,160 | 99.4% |
+| PUSH_NULL | 880 | 0.3% |
+| LOAD_CONST | 600 | 0.2% |
+| TO_BOOL_BOOL | 120 | 0.0% |
+| RETURN_VALUE | 120 | 0.0% |
+
+
+</details>
+
+### LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_NONDESCRIPTOR_WITH_VALUES </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 1,800 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 1,800 | 100.0% |
+
+
+</details>
+
+### LOAD_ATTR_PROPERTY
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_PROPERTY </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 3,281,840 | 89.1% |
+| BINARY_SUBSCR | 398,520 | 10.8% |
+| LOAD_FAST_LOAD_FAST | 2,160 | 0.1% |
+| COPY | 360 | 0.0% |
+| BINARY_SUBSCR_LIST_INT | 240 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| RESUME_CHECK | 3,683,400 | 100.0% |
+
+
+</details>
+
+### LOAD_ATTR_SLOT
+
+<details>
+<summary> Successors and predecessors for LOAD_ATTR_SLOT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 4,805,600 | 82.2% |
+| LOAD_FAST_LOAD_FAST | 1,034,880 | 17.7% |
+| STORE_FAST_LOAD_FAST | 5,760 | 0.1% |
+| LOAD_ATTR_SLOT | 160 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 2,436,240 | 41.7% |
+| LOAD_ATTR_METHOD_WITH_VALUES | 1,870,400 | 32.0% |
+| LOAD_FAST | 779,520 | 13.3% |
+| CONTAINS_OP | 654,000 | 11.2% |
+| STORE_ATTR_INSTANCE_VALUE | 99,240 | 1.7% |
+
+
+</details>
+
+### LOAD_GLOBAL_BUILTIN
+
+<details>
+<summary> Successors and predecessors for LOAD_GLOBAL_BUILTIN </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST | 1,237,080 | 19.5% |
+| POP_JUMP_IF_FALSE | 1,042,000 | 16.5% |
+| POP_JUMP_IF_TRUE | 986,760 | 15.6% |
+| LOAD_FAST | 904,680 | 14.3% |
+| RESUME_CHECK | 867,240 | 13.7% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 5,304,780 | 83.8% |
+| CALL_ISINSTANCE | 685,560 | 10.8% |
+| LOAD_CONST | 206,640 | 3.3% |
+| LOAD_ATTR_CLASS | 132,480 | 2.1% |
+| LOAD_GLOBAL_BUILTIN | 2,040 | 0.0% |
+
+
+</details>
+
+### LOAD_GLOBAL_MODULE
+
+<details>
+<summary> Successors and predecessors for LOAD_GLOBAL_MODULE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 6,808,320 | 50.8% |
+| BINARY_SUBSCR_DICT | 1,960,920 | 14.6% |
+| LOAD_ATTR_METHOD_NO_DICT | 1,253,160 | 9.3% |
+| POP_JUMP_IF_FALSE | 1,129,920 | 8.4% |
+| NOP | 828,000 | 6.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| CONTAINS_OP | 4,634,280 | 34.6% |
+| LOAD_CONST | 3,170,040 | 23.6% |
+| IS_OP | 1,593,960 | 11.9% |
+| CALL_METHOD_DESCRIPTOR_O | 869,640 | 6.5% |
+| LOAD_FAST_LOAD_FAST | 836,640 | 6.2% |
+
+
+</details>
+
+### LOAD_SUPER_ATTR_ATTR
+
+<details>
+<summary> Successors and predecessors for LOAD_SUPER_ATTR_ATTR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 240 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| PUSH_NULL | 240 | 100.0% |
+
+
+</details>
+
+### LOAD_SUPER_ATTR_METHOD
+
+<details>
+<summary> Successors and predecessors for LOAD_SUPER_ATTR_METHOD </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| CALL | 120 | 100.0% |
+
+
+</details>
+
+### RESUME_CHECK
+
+<details>
+<summary> Successors and predecessors for RESUME_CHECK </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CALL_PY_EXACT_ARGS | 13,474,420 | 59.8% |
+| LOAD_ATTR_PROPERTY | 3,683,400 | 16.3% |
+| CALL_BOUND_METHOD_EXACT_ARGS | 1,715,140 | 7.6% |
+| CALL_PY_WITH_DEFAULTS | 1,528,800 | 6.8% |
+| FOR_ITER_GEN | 1,037,520 | 4.6% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 19,082,400 | 84.7% |
+| POP_TOP | 1,037,520 | 4.6% |
+| LOAD_GLOBAL_BUILTIN | 867,240 | 3.8% |
+| NOP | 825,000 | 3.7% |
+| LOAD_FAST_LOAD_FAST | 359,640 | 1.6% |
+
+
+</details>
+
+### STORE_ATTR_INSTANCE_VALUE
+
+<details>
+<summary> Successors and predecessors for STORE_ATTR_INSTANCE_VALUE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 10,886,640 | 84.9% |
+| LOAD_FAST_LOAD_FAST | 1,826,520 | 14.2% |
+| LOAD_ATTR_SLOT | 99,240 | 0.8% |
+| SWAP | 9,120 | 0.1% |
+| STORE_FAST_LOAD_FAST | 4,560 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 6,174,480 | 48.1% |
+| RETURN_CONST | 3,845,640 | 30.0% |
+| JUMP_FORWARD | 794,520 | 6.2% |
+| BUILD_LIST | 671,040 | 5.2% |
+| LOAD_CONST | 440,160 | 3.4% |
+
+
+</details>
+
+### STORE_ATTR_SLOT
+
+<details>
+<summary> Successors and predecessors for STORE_ATTR_SLOT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 5,880 | 50.5% |
+| LOAD_FAST_LOAD_FAST | 5,520 | 47.4% |
+| STORE_ATTR_SLOT | 240 | 2.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| BUILD_MAP | 5,520 | 47.4% |
+| RETURN_CONST | 3,000 | 25.8% |
+| LOAD_FAST_LOAD_FAST | 2,760 | 23.7% |
+| STORE_ATTR_SLOT | 240 | 2.1% |
+| BUILD_LIST | 120 | 1.0% |
+
+
+</details>
+
+### STORE_SUBSCR_DICT
+
+<details>
+<summary> Successors and predecessors for STORE_SUBSCR_DICT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 988,680 | 46.0% |
+| SWAP | 941,280 | 43.7% |
+| LOAD_FAST | 221,640 | 10.3% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 988,920 | 46.0% |
+| RETURN_CONST | 940,800 | 43.7% |
+| JUMP_BACKWARD | 215,880 | 10.0% |
+| LOAD_GLOBAL_BUILTIN | 5,760 | 0.3% |
+| LOAD_CONST | 240 | 0.0% |
+
+
+</details>
+
+### STORE_SUBSCR_LIST_INT
+
+<details>
+<summary> Successors and predecessors for STORE_SUBSCR_LIST_INT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| SWAP | 456,360 | 67.9% |
+| LOAD_CONST | 215,880 | 32.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_CONST | 240,360 | 35.8% |
+| RETURN_CONST | 216,000 | 32.1% |
+| LOAD_FAST | 215,880 | 32.1% |
+
+
+</details>
+
+### TO_BOOL_ALWAYS_TRUE
+
+<details>
+<summary> Successors and predecessors for TO_BOOL_ALWAYS_TRUE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_FAST | 2,202,320 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 2,202,320 | 100.0% |
+
+
+</details>
+
+### TO_BOOL_BOOL
+
+<details>
+<summary> Successors and predecessors for TO_BOOL_BOOL </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| RETURN_CONST | 5,640,720 | 43.1% |
+| LOAD_FAST | 3,713,160 | 28.4% |
+| CALL_ISINSTANCE | 1,488,840 | 11.4% |
+| BINARY_OP | 865,320 | 6.6% |
+| BINARY_SUBSCR_DICT | 653,640 | 5.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 8,998,320 | 68.8% |
+| POP_JUMP_IF_TRUE | 4,076,880 | 31.2% |
+| EXTENDED_ARG | 240 | 0.0% |
+
+
+</details>
+
+### TO_BOOL_INT
+
+<details>
+<summary> Successors and predecessors for TO_BOOL_INT </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| CALL_LEN | 383,280 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_TRUE | 383,280 | 100.0% |
+
+
+</details>
+
+### TO_BOOL_LIST
+
+<details>
+<summary> Successors and predecessors for TO_BOOL_LIST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR_INSTANCE_VALUE | 1,037,840 | 76.5% |
+| BINARY_SUBSCR_DICT | 319,440 | 23.5% |
+| LOAD_FAST | 240 | 0.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_FALSE | 1,357,520 | 100.0% |
+
+
+</details>
+
+### TO_BOOL_NONE
+
+<details>
+<summary> Successors and predecessors for TO_BOOL_NONE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR | 353,680 | 98.7% |
+| LOAD_ATTR_INSTANCE_VALUE | 3,600 | 1.0% |
+| LOAD_FAST | 720 | 0.2% |
+| TO_BOOL_STR | 460 | 0.1% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_TRUE | 353,920 | 98.7% |
+| POP_JUMP_IF_FALSE | 4,080 | 1.1% |
+| TO_BOOL_STR | 460 | 0.1% |
+
+
+</details>
+
+### TO_BOOL_STR
+
+<details>
+<summary> Successors and predecessors for TO_BOOL_STR </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| LOAD_ATTR | 29,600 | 92.9% |
+| LOAD_FAST | 1,800 | 5.6% |
+| TO_BOOL_NONE | 460 | 1.4% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| POP_JUMP_IF_TRUE | 31,400 | 98.6% |
+| TO_BOOL_NONE | 460 | 1.4% |
+
+
+</details>
+
+### UNPACK_SEQUENCE_LIST
+
+<details>
+<summary> Successors and predecessors for UNPACK_SEQUENCE_LIST </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| FOR_ITER_LIST | 3,120 | 100.0% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST_STORE_FAST | 3,120 | 100.0% |
+
+
+</details>
+
+### UNPACK_SEQUENCE_TWO_TUPLE
+
+<details>
+<summary> Successors and predecessors for UNPACK_SEQUENCE_TWO_TUPLE </summary>
+
+|Predecessors | Count | Percentage | 
+|---|---:|---:|
+| BINARY_SUBSCR_DICT | 468,720 | 67.1% |
+| FOR_ITER | 218,640 | 31.3% |
+| LOAD_ATTR_INSTANCE_VALUE | 7,440 | 1.1% |
+| RETURN_VALUE | 1,800 | 0.3% |
+| CALL_BUILTIN_FAST | 1,560 | 0.2% |
+
+|Successors | Count | Percentage | 
+|---|---:|---:|
+| STORE_FAST_STORE_FAST | 696,720 | 99.7% |
+| LOAD_FAST | 1,800 | 0.3% |
+
+
+</details>
+
+
+</details>
+
+## Specialization stats
+
+<details>
+<summary> specialization stats by family </summary>
+
+### BINARY_SLICE
+
+<details>
+<summary> specialization stats for BINARY_SLICE family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+
+
+</details>
+
+### BINARY_SUBSCR
+
+<details>
+<summary> specialization stats for BINARY_SUBSCR family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |      5001200 | 19.3% |
+|          hit |     20896560 | 80.7% |
+|         miss |          240 | 0.0% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 40 | 2.0% |
+| Failure | 1,980 | 98.0% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+| out of range | 1,500 | 75.8% |
+| buffer int | 280 | 14.1% |
+| buffer slice | 140 | 7.1% |
+| list slice | 60 | 3.0% |
+
+
+</details>
+
+### STORE_SUBSCR
+
+<details>
+<summary> specialization stats for STORE_SUBSCR family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+|          hit |      2823840 | 100.0% |
+
+
+</details>
+
+### TO_BOOL
+
+<details>
+<summary> specialization stats for TO_BOOL family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |      1981920 | 8.1% |
+| specialization.deopt |          920 | 0.0% |
+|          hit |     22509840 | 91.7% |
+|         miss |        49400 | 0.2% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 920 | 58.2% |
+| Failure | 660 | 41.8% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+| sequence | 240 | 36.4% |
+| dict | 200 | 30.3% |
+| mapping | 140 | 21.2% |
+| bytes | 60 | 9.1% |
+| other | 20 | 3.0% |
+
+
+</details>
+
+### BINARY_OP
+
+<details>
+<summary> specialization stats for BINARY_OP family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |       873840 | 9.5% |
+|          hit |      8315340 | 90.5% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 20 | 4.5% |
+| Failure | 420 | 95.5% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+| xor | 220 | 52.4% |
+| multiply different types | 100 | 23.8% |
+| remainder | 40 | 9.5% |
+| add other | 40 | 9.5% |
+| or | 20 | 4.8% |
+
+
+</details>
+
+### CALL
+
+<details>
+<summary> specialization stats for CALL family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |      1526700 | 4.1% |
+| specialization.deopt |        95740 | 0.3% |
+|          hit |     31020060 | 82.5% |
+|         miss |      5073860 | 13.5% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 95,760 | 98.9% |
+| Failure | 1,040 | 1.1% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+| meth descr method fastcall keywords | 300 | 28.8% |
+| meth descr varargs | 240 | 23.1% |
+| class no vectorcall | 140 | 13.5% |
+| operator wrapper | 60 | 5.8% |
+| class mutable | 60 | 5.8% |
+| cfunc noargs | 60 | 5.8% |
+| code complex parameters | 60 | 5.8% |
+| str | 40 | 3.8% |
+| no dict | 40 | 3.8% |
+| cfunc varargs keywords | 20 | 1.9% |
+| other | 20 | 1.9% |
+
+
+</details>
+
+### COMPARE_OP
+
+<details>
+<summary> specialization stats for COMPARE_OP family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |      2272700 | 8.4% |
+| specialization.deopt |          260 | 0.0% |
+|          hit |     24850180 | 91.6% |
+|         miss |        14240 | 0.1% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 280 | 17.5% |
+| Failure | 1,320 | 82.5% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+| different types | 600 | 45.5% |
+| tuple | 340 | 25.8% |
+| baseobject | 140 | 10.6% |
+| bytes | 140 | 10.6% |
+| long float | 100 | 7.6% |
+
+
+</details>
+
+### FOR_ITER
+
+<details>
+<summary> specialization stats for FOR_ITER family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |      1747560 | 47.2% |
+|          hit |      1955500 | 52.8% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 0 | 0.0% |
+| Failure | 540 | 100.0% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+| reversed list | 340 | 63.0% |
+| dict items | 180 | 33.3% |
+| other | 20 | 3.7% |
+
+
+</details>
+
+### JUMP_BACKWARD
+
+<details>
+<summary> specialization stats for JUMP_BACKWARD family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+
+
+</details>
+
+### LOAD_ATTR
+
+<details>
+<summary> specialization stats for LOAD_ATTR family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |      5105060 | 4.3% |
+| specialization.deopt |          240 | 0.0% |
+|          hit |    112436100 | 95.6% |
+|         miss |        17320 | 0.0% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 280 | 8.1% |
+| Failure | 3,160 | 91.9% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+| method | 2,120 | 67.1% |
+| not managed dict | 320 | 10.1% |
+| class attr simple | 260 | 8.2% |
+| mutable class | 180 | 5.7% |
+| metaclass attribute | 120 | 3.8% |
+| has managed dict | 120 | 3.8% |
+| overridden | 40 | 1.3% |
+
+
+</details>
+
+### LOAD_GLOBAL
+
+<details>
+<summary> specialization stats for LOAD_GLOBAL family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |           20 | 0.0% |
+|          hit |     19762600 | 100.0% |
+|         miss |         1080 | 0.0% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 60 | 100.0% |
+| Failure | 0 | 0.0% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+
+
+</details>
+
+### LOAD_SUPER_ATTR
+
+<details>
+<summary> specialization stats for LOAD_SUPER_ATTR family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+|          hit |          360 | 100.0% |
+
+
+</details>
+
+### POP_JUMP_IF_FALSE
+
+<details>
+<summary> specialization stats for POP_JUMP_IF_FALSE family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+
+
+</details>
+
+### POP_JUMP_IF_NONE
+
+<details>
+<summary> specialization stats for POP_JUMP_IF_NONE family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+
+
+</details>
+
+### POP_JUMP_IF_NOT_NONE
+
+<details>
+<summary> specialization stats for POP_JUMP_IF_NOT_NONE family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+
+
+</details>
+
+### POP_JUMP_IF_TRUE
+
+<details>
+<summary> specialization stats for POP_JUMP_IF_TRUE family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+
+
+</details>
+
+### STORE_ATTR
+
+<details>
+<summary> specialization stats for STORE_ATTR family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+| specialization.deferred |      1072680 | 7.7% |
+| specialization.deopt |          240 | 0.0% |
+|          hit |     12825160 | 92.2% |
+|         miss |        13520 | 0.1% |
+
+#### Specialization attempts
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Success | 240 | 33.3% |
+| Failure | 480 | 66.7% |
+
+|Failure kind | Count | Ratio | 
+|---|---:|---:|
+| overriding descriptor | 260 | 54.2% |
+| property | 200 | 41.7% |
+| no dict | 20 | 4.2% |
+
+
+</details>
+
+### UNPACK_SEQUENCE
+
+<details>
+<summary> specialization stats for UNPACK_SEQUENCE family </summary>
+
+|Kind | Count | Ratio | 
+|---|---|---|
+|          hit |       703680 | 100.0% |
+
+
+</details>
+
+
+</details>
+
+## Specialization effectiveness
+
+<details>
+<summary> specialization effectiveness </summary>
+
+|Instructions | Count | Ratio | 
+|---|---:|---:|
+| Basic | 335,470,160 | 49.9% |
+| Not specialized | 86,707,220 | 12.9% |
+| Specialized | 250,663,180 | 37.3% |
+
+### Deferred by instruction
+
+<details>
+<summary> deferred by instruction </summary>
+
+|Name | Count | Ratio | 
+|---|---:|---:|
+| RESUME | 368,934,881,474,191,031,300 | 100.0% |
+| LOAD_ATTR | 5,105,060 | 0.0% |
+| BINARY_SUBSCR | 5,001,200 | 0.0% |
+| COMPARE_OP | 2,272,700 | 0.0% |
+| TO_BOOL | 1,981,920 | 0.0% |
+| FOR_ITER | 1,747,560 | 0.0% |
+| CALL | 1,526,700 | 0.0% |
+| STORE_ATTR | 1,072,680 | 0.0% |
+| BINARY_OP | 873,840 | 0.0% |
+| LOAD_GLOBAL | 20 | 0.0% |
+
+
+</details>
+
+### Misses by instruction
+
+<details>
+<summary> misses by instruction </summary>
+
+|Name | Count | Ratio | 
+|---|---:|---:|
+| CALL_PY_EXACT_ARGS | 3,846,440 | 74.4% |
+| CALL_BOUND_METHOD_EXACT_ARGS | 963,220 | 18.6% |
+| CALL_METHOD_DESCRIPTOR_O | 258,320 | 5.0% |
+| TO_BOOL_NONE | 24,540 | 0.5% |
+| TO_BOOL_STR | 24,380 | 0.5% |
+| COMPARE_OP_STR | 14,240 | 0.3% |
+| STORE_ATTR_SLOT | 10,640 | 0.2% |
+| LOAD_ATTR_SLOT | 9,880 | 0.2% |
+| LOAD_ATTR_METHOD_NO_DICT | 5,880 | 0.1% |
+| CALL_METHOD_DESCRIPTOR_FAST | 5,880 | 0.1% |
+
+
+</details>
+
+
+</details>
+
+## Call stats
+
+<details>
+<summary> Inlined calls and frame stats </summary>
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Calls to PyEval_EvalDefault | 365,400 | 1.6% |
+| Calls to Python functions inlined | 22,186,860 | 98.4% |
+| Calls via PyEval_EvalFrame (total) | 365,400 | 1.6% |
+| Calls via PyEval_EvalFrame (vector) | 365,400 | 1.6% |
+| Calls via PyEval_EvalFrame (generator) | 0 | 0.0% |
+| Calls via PyEval_EvalFrame (legacy) | 0 | 0.0% |
+| Calls via PyEval_EvalFrame (function vectorcall) | 365,400 | 1.6% |
+| Calls via PyEval_EvalFrame (build class) | 0 | 0.0% |
+| Calls via PyEval_EvalFrame (slot) | 13,800 | 0.1% |
+| Calls via PyEval_EvalFrame (function ex) | 300 | 0.0% |
+| Calls via PyEval_EvalFrame (api) | 335,640 | 1.5% |
+| Calls via PyEval_EvalFrame (method) | 0 | 0.0% |
+| Frames pushed | 21,862,140 | 96.9% |
+| Frame objects created | 0 | 0.0% |
+
+
+</details>
+
+## Object stats
+
+<details>
+<summary> allocations, frees and dict materializatons </summary>
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Allocations from freelist | 10,257,400 | 29.4% |
+| Frees to freelist | 10,302,420 |  |
+| Allocations | 24,650,620 | 70.6% |
+| Allocations to 512 bytes | 24,434,440 | 70.0% |
+| Allocations to 4 kbytes | 207,780 | 0.6% |
+| Allocations over 4 kbytes | 8,400 | 0.0% |
+| Frees | 24,551,440 |  |
+| New values | 360 |  |
+| Interpreter increfs | 292,448,400 | 74.5% |
+| Interpreter decrefs | 321,863,880 | 76.2% |
+| Increfs | 100,160,242 | 25.5% |
+| Decrefs | 100,352,742 | 23.8% |
+| Materialize dict (on request) | 0 | 0.0% |
+| Materialize dict (new key) | 0 | 0.0% |
+| Materialize dict (too big) | 0 | 0.0% |
+| Materialize dict (str subclass) | 0 | 0.0% |
+| Dematerialize dict | 0 | 0.0% |
+| Method cache hits | 7,011,810 |  |
+| Method cache misses | 4,970 |  |
+| Method cache collisions | 5,766 |  |
+| Method cache dunder hits | 1,684,544 |  |
+| Method cache dunder misses | 796 |  |
+
+
+</details>
+
+## GC stats
+
+<details>
+<summary> GC collections and effectiveness </summary>
+
+|Generation | Collections | Objects collected | Object visits | 
+|---:|---:|---:|---:|
+| 0 | 2,620 | 0 | 10,320,920 |
+| 1 | 240 | 0 | 10,198,760 |
+| 2 | 20 | 675,800 | 10,603,040 |
+
+
+</details>
+
+## Optimization (Tier 2) stats
+
+<details>
+<summary> statistics about the Tier 2 optimizer </summary>
+
+### Overall stats
+
+<details>
+<summary> overall stats </summary>
+
+| | Count | Ratio | 
+|---|---:|---:|
+| Optimization attempts | 118,180 |  |
+| Traces created | 120 | 0.1% |
+| Traces executed | 0 |  |
+| Uops executed | 0 | 0 |
+| Trace stack overflow | 0 |  |
+| Trace stack underflow | 0 |  |
+| Trace too long | 0 |  |
+| Trace too short | 0 |  |
+| Inner loop found | 0 |  |
+| Recursive call | 0 |  |
+
+
+</details>
+
+**Trace length histogram**
+
+|Range | Count | Ratio | 
+|---|---:|---:|
+| <= 1 | 0 | 0.0% |
+| <= 2 | 0 | 0.0% |
+| <= 4 | 0 | 0.0% |
+| <= 8 | 0 | 0.0% |
+| <= 16 | 0 | 0.0% |
+| <= 32 | 60 | 50.0% |
+| <= 64 | 60 | 50.0% |
+
+**Optimized trace length histogram**
+
+|Range | Count | Ratio | 
+|---|---:|---:|
+| <= 1 | 0 | 0.0% |
+| <= 2 | 0 | 0.0% |
+| <= 4 | 0 | 0.0% |
+| <= 8 | 0 | 0.0% |
+| <= 16 | 20 | 16.7% |
+| <= 32 | 40 | 33.3% |
+| <= 64 | 60 | 50.0% |
+
+**Trace run length histogram**
+
+|Range | Count | Ratio | 
+|---|---:|---:|
+| <= 1 | 0 |  |
+
+### Uop stats
+
+<details>
+<summary> uop stats </summary>
+
+|Uop | Count | Self | Cumulative | 
+|---|---:|---:|---:|
+
+
+</details>
+
+### Unsupported opcodes
+
+<details>
+<summary> unsupported opcodes </summary>
+
+|Opcode | Count | 
+|---|---|
+| FOR_ITER_GEN | 61,040 |
+| FOR_ITER | 57,020 |
+| CALL_PY_WITH_DEFAULTS | 40 |
+| LOAD_ATTR_PROPERTY | 20 |
+| CALL | 20 |
+
+
+</details>
+
+
+</details>
+
+## Meta stats
+
+<details>
+<summary> Meta statistics </summary>
+
+| | Count | 
+|---|---:|
+| Number of data files | 20 |
+
+
+</details>
+
+---
+Stats gathered on: 2023-10-11
