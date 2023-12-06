@@ -12,6 +12,7 @@ on:
         type: string
       repo:
         description: Name of cpython repo to benchmark
+        type: string
       ref:
         description: Branch, tag or (full) SHA commit to benchmark
         type: string
