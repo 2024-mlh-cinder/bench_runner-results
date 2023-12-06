@@ -10,9 +10,11 @@ on:
       fork:
         description: Fork of cpython to benchmark
         default: facebookincubator
+        type: string
       repo:
         description: Name of cpython repo to benchmark
         default: cinder
+        type: string
       ref:
         description: Branch, tag or (full) SHA commit to benchmark
         default: main
