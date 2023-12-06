@@ -9,7 +9,10 @@ on:
     inputs:
       fork:
         description: Fork of cpython to benchmark
-        default: python
+        default: facebookincubator
+      repo:
+        description: Name of cpython repo to benchmark
+        default: cinder
       ref:
         description: Branch, tag or (full) SHA commit to benchmark
         default: main
@@ -68,8 +71,8 @@ jobs:
       uses: actions/checkout@v3
       if: ${{ inputs.benchmark_base }}
       with:
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
+        repository: ${{ inputs.fork }}/${{ inputs.repo }}
+        path: ${{ inputs.repo }}
         ref: ${{ inputs.ref }}
         fetch-depth: 0
     - name: Install dependencies from PyPI
@@ -85,6 +88,7 @@ jobs:
     uses: ./.github/workflows/_benchmark.yml
     with:
       fork: ${{ inputs.fork }}
+      repo: ${{ inputs.repo }}
       ref: ${{ inputs.ref }}
       machine: ${{ inputs.machine }}
       benchmarks: ${{ inputs.benchmarks }}
@@ -101,6 +105,7 @@ jobs:
     if: ${{ needs.determine_base.outputs.need_to_run != 'false' }}
     with:
       fork: python
+      repo: cpython
       ref: ${{ needs.determine_base.outputs.ref }}
       machine: ${{ inputs.machine }}
       benchmarks: ${{ inputs.benchmarks }}
@@ -116,6 +121,7 @@ jobs:
     if: ${{ inputs.pystats }}
     with:
       fork: ${{ inputs.fork }}
+      repo: ${{ inputs.repo }}
       ref: ${{ inputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
       individual: ${{ inputs.pystats_individual }}
@@ -130,6 +136,7 @@ jobs:
       }}
     with:
       fork: python
+      repo: cpython
       ref: ${{ needs.determine_base.outputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
       individual: ${{ inputs.pystats_individual }}
@@ -143,10 +150,4 @@ jobs:
       force: false
     if: ${{ always() }}
     needs: [head, base, pystats-head, pystats-base]
-    secrets: inherit
-
-  publish:
-    uses: ./.github/workflows/_publish.yml
-    if: ${{ always() }}
-    needs: [generate]
     secrets: inherit

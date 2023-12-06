@@ -10,6 +10,8 @@ on:
       fork:
         description: Fork of cpython to benchmark
         type: string
+      repo:
+        description: Name of cpython repo to benchmark
       ref:
         description: Branch, tag or (full) SHA commit to benchmark
         type: string
@@ -43,7 +45,11 @@ on:
       fork:
         description: Fork of cpython to benchmark
         type: string
-        default: python
+        default: facebookincubator
+      repo:
+        description: Name of cpython repo to benchmark
+        type: string
+        default: cinder
       ref:
         description: Branch, tag or (full) SHA commit to benchmark
         type: string
@@ -95,8 +101,8 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
+        repository: ${{ inputs.fork }}/${{ inputs.repo }}
+        path: ${{ inputs.repo }}
         ref: ${{ inputs.ref }}
         fetch-depth: 50
     - name: Install dependencies from PyPI
@@ -129,7 +135,7 @@ jobs:
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        cd cpython
+        cd ${{ inputs.repo }}
         ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit' || '' }}
         make -j4
     - name: Install pyperformance
@@ -148,7 +154,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
+        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} ${{ inputs.repo }}/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3
@@ -190,8 +196,8 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
+        repository: ${{ inputs.fork }}/${{ inputs.repo }}
+        path: ${{ inputs.repo }}
         ref: ${{ inputs.ref }}
         fetch-depth: 50
     - name: Install dependencies from PyPI
@@ -228,7 +234,7 @@ jobs:
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        cd cpython
+        cd ${{ inputs.repo }}
         ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit' || '' }}
         make -j4
       # On macos ARM64, actions/setup-python isn't available, so we rely on a
@@ -240,7 +246,7 @@ jobs:
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        venv/bin/python -m bench_runner run_benchmarks benchmark cpython/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
+        venv/bin/python -m bench_runner run_benchmarks benchmark ${{ inputs.repo }}/python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
     - name: Upload artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v3
@@ -278,8 +284,8 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
+        repository: ${{ inputs.fork }}/${{ inputs.repo }}
+        path: ${{ inputs.repo }}
         ref: ${{ inputs.ref }}
         fetch-depth: 50
     - name: Install dependencies from PyPI
@@ -312,8 +318,9 @@ jobs:
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        cd cpython
+        cd ${{ inputs.repo }}
         PCbuild\build.bat ${{ inputs.pgo == true && '--pgo' || '' }} ${{ inputs.jit == true && '--experimental-jit' || '' }} -c Release
+
         # Copy the build products to a place that libraries can find them.
         Copy-Item -Path "PCBuild/amd64" -Destination "libs" -Recurse
     - name: Install pyperformance
@@ -323,7 +330,7 @@ jobs:
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        venv\Scripts\python.exe -m bench_runner run_benchmarks benchmark cpython\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
+        venv\Scripts\python.exe -m bench_runner run_benchmarks benchmark ${{ inputs.repo }}\PCbuild\amd64\python.exe ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
     - name: Upload artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       uses: actions/upload-artifact@v3
@@ -362,8 +369,8 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
-        repository: ${{ inputs.fork }}/cpython
-        path: cpython
+        repository: ${{ inputs.fork }}/${{ inputs.repo }}
+        path: ${{ inputs.repo }}
         ref: ${{ inputs.ref }}
         fetch-depth: 50
     - name: Install dependencies from PyPI
@@ -396,7 +403,7 @@ jobs:
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        cd cpython
+        cd ${{ inputs.repo }}
         ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit' || '' }}
         make -j4
     - name: Install pyperformance
@@ -415,7 +422,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
+        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} ${{ inputs.repo }}/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3

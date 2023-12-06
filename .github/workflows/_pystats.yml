@@ -10,7 +10,11 @@ on:
       fork:
         description: Fork of cpython to benchmark
         type: string
-        default: python
+        default: facebookincubator
+      repo:
+        description: Name of cpython repo to benchmark
+        type: string
+        default: cinder
       ref:
         description: Branch, tag or (full) SHA commit to benchmark
         type: string
@@ -36,6 +40,9 @@ on:
     inputs:
       fork:
         description: Fork of cpython to benchmark
+        type: string
+      repo:
+        description: Name of cpython repo to benchmark
         type: string
       ref:
         description: Branch, tag or (full) SHA commit to benchmark
@@ -70,9 +77,9 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
-        repository: ${{ inputs.fork }}/cpython
+        repository: ${{ inputs.fork }}/${{ inputs.repo }}
         ref: ${{ inputs.ref }}
-        path: cpython
+        path: ${{ inputs.repo }}
         fetch-depth: 50
     - name: Install dependencies from PyPI
       run: |
@@ -105,7 +112,7 @@ jobs:
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        cd cpython
+        cd ${{ inputs.repo }}
         ./configure --enable-pystats --prefix=$PWD/install
         make -j4
         make install
@@ -120,7 +127,7 @@ jobs:
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        python -m bench_runner run_benchmarks pystats cpython/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.individual == true && '--individual' || '' }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }}
+        python -m bench_runner run_benchmarks pystats ${{ inputs.repo }}/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.individual == true && '--individual' || '' }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }}
     - name: Pull benchmarking
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
