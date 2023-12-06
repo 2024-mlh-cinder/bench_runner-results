@@ -93,7 +93,6 @@ jobs:
       fork: ${{ inputs.fork }}
       repo: ${{ inputs.repo }}
       ref: ${{ inputs.ref }}
-      machine: ${{ inputs.machine }}
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       perf: false
@@ -110,7 +109,6 @@ jobs:
       fork: python
       repo: cpython
       ref: ${{ needs.determine_base.outputs.ref }}
-      machine: ${{ inputs.machine }}
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       perf: false
