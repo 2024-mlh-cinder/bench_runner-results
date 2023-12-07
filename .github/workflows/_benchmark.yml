@@ -10,7 +10,7 @@ on:
       fork:
         description: Fork of cpython to benchmark
         type: string
-      repo:
+      reponame:
         description: Name of cpython repo to benchmark
         type: string
       ref:
@@ -44,7 +44,7 @@ on:
         description: Fork of cpython to benchmark
         type: string
         default: facebookincubator
-      repo:
+      reponame:
         description: Name of cpython repo to benchmark
         type: string
         default: cinder
@@ -89,8 +89,8 @@ jobs:
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
-        repository: ${{ inputs.fork }}/${{ inputs.repo }}
-        path: ${{ inputs.repo }}
+        repository: ${{ inputs.fork }}/${{ inputs.reponame }}
+        path: ${{ inputs.reponame }}
         ref: ${{ inputs.ref }}
         fetch-depth: 50
     - name: Install dependencies from PyPI
@@ -123,7 +123,7 @@ jobs:
     - name: Build Python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        cd ${{ inputs.repo }}
+        cd ${{ inputs.reponame }}
         ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit' || '' }}
         make -j4
     - name: Install pyperformance
@@ -142,7 +142,7 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} ${{ inputs.repo }}/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
+        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} ${{ inputs.reponame }}/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3
