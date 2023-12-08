@@ -82,7 +82,7 @@ jobs:
     - name: Install System Dependencies
       run: |
         sudo dnf update
-        sudo dnf install -y dnf-plugins-core
+        sudo dnf install -y dnf-plugins-core ccache
         sudo dnf builddep -y python3
 
     - name: Enable ccache
