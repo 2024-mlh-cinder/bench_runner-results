@@ -125,7 +125,7 @@ jobs:
       run: |
         cd ${{ inputs.reponame }}
         ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit' || '' }}
-        make -j4
+        make
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
