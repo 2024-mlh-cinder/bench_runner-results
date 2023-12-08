@@ -84,7 +84,7 @@ jobs:
         sudo dnf update
         sudo dnf install -y dnf-plugins-core python3.11
         sudo dnf builddep -y python3
-        sudo ln -s /usr/bin/python3.11 /usr/bin/python
+        sudo ln -fs /usr/bin/python3.11 /usr/bin/python
 
   benchmark-linux-x86_64-linux:
     needs: setup
