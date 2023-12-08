@@ -94,10 +94,6 @@ jobs:
     steps:
     - name: Checkout benchmarking
       uses: actions/checkout@v3
-    - name: Setup system Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
