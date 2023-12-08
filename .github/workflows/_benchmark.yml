@@ -82,7 +82,7 @@ jobs:
     - name: Install System Dependencies
       run: |
         sudo dnf update
-        sudo dnf install -y dnf-plugins-core
+        sudo dnf install -y dnf-plugins-core python
         sudo dnf builddep -y python3
 
   benchmark-linux-x86_64-linux:
@@ -107,7 +107,7 @@ jobs:
         fetch-depth: 50
     - name: Install dependencies from PyPI
       run: |
-        python3 -m venv venv
+        python -m venv venv
         venv/bin/python -m pip install -r requirements.txt
     - name: Should we run?
       if: ${{ always() }}
