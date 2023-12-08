@@ -81,8 +81,8 @@ jobs:
     steps:
     - name: Install System Dependencies
       run: |
-        sudo apt update
-        sudo apt install -y python3 build-essential ccache gdb lcov pkg-config \
+        sudo dnf update
+        sudo dnf install -y python3 build-essential ccache gdb lcov pkg-config \
         libbz2-dev libffi-dev libgdbm-dev libgdbm-compat-dev liblzma-dev \
         libncurses5-dev libreadline-dev libsqlite3-dev libssl-dev \
         lzma lzma-dev tk-dev uuid-dev zlib1g-dev linux-tools-generic
