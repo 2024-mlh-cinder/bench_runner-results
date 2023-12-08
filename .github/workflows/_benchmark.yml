@@ -82,7 +82,7 @@ jobs:
     - name: Install System Dependencies
       run: |
         sudo dnf update
-        sudo dnf install -y dnf-plugins-core python
+        sudo dnf install -y dnf-plugins-core python3.11
         sudo dnf builddep -y python3
 
   benchmark-linux-x86_64-linux:
@@ -95,6 +95,8 @@ jobs:
       uses: actions/checkout@v3
     - name: Setup system Python
       uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
