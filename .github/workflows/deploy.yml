@@ -1,7 +1,11 @@
 name: Deploy benchrunner to AWS
 
 on:
-  [workflow_dispatch]
+  workflow_dispatch:
+    inputs:
+      register_token:
+        description: Registration token for the self-hosted runner.
+        type: string
 
 jobs:
   deploy:
@@ -26,6 +30,4 @@ jobs:
       - name: Start EC2 instance Using Terraform Configuration
         run: |
           terraform init
-          terraform apply -auto-approve -input=false -var register_token="$REGISTER_TOKEN"
-        env:
-          REGISTER_TOKEN: ${{ secrets.REGISTER_TOKEN }}
+          terraform apply -auto-approve -input=false -var register_token="${{ inputs.register_token }}"
