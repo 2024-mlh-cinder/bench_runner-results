@@ -36,10 +36,6 @@ on:
       benchmarks:
         description: Benchmarks to run (comma-separated; empty runs all benchmarks)
         type: string
-      benchmark_base:
-        description: Also benchmark the base of this commit
-        type: boolean
-        default: false
       pystats:
         description: Also collect pystats for this commit
         type: boolean
