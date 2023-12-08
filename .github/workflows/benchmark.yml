@@ -18,6 +18,10 @@ on:
       ref:
         description: Branch, tag or (full) SHA commit to benchmark
         default: main
+      base_version:
+        description: Python version to use as the base
+        type: string
+        default: '3.11'
       machine:
         description: Machine to run on
         default: linux-x86_64-aws
@@ -54,39 +58,6 @@ on:
         default: false
 
 jobs:
-  # Determine the base commit of the selected commit. The output is passed to
-  # the `base` job below. If the data already exists for this commit, it will be
-  # skipped.
-  determine_base:
-    runs-on: ubuntu-latest
-    outputs:
-      ref: ${{ steps.base.outputs.ref }}
-      need_to_run: ${{ steps.base.outputs.need_to_run }}
-    steps:
-    - name: Checkout benchmarking
-      uses: actions/checkout@v3
-    - name: Setup system Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.11'
-        cache: pip
-    - name: Checkout CPython
-      uses: actions/checkout@v3
-      if: ${{ inputs.benchmark_base }}
-      with:
-        repository: ${{ inputs.fork }}/${{ inputs.reponame }}
-        path: ${{ inputs.reponame }}
-        ref: ${{ inputs.ref }}
-        fetch-depth: 0
-    - name: Install dependencies from PyPI
-      run: |
-        pip install -r requirements.txt
-    - name: Determine base
-      id: base
-      run: |
-        python -m bench_runner get_merge_base ${{ inputs.benchmark_base }} ${{ inputs.machine }} ${{ inputs.pystats }} ${{ inputs.tier2 }} ${{ inputs.jit }} >> $GITHUB_OUTPUT
-        cat $GITHUB_OUTPUT
-
   head:
     uses: ./.github/workflows/_benchmark.yml
     with:
@@ -103,12 +74,10 @@ jobs:
 
   base:
     uses: ./.github/workflows/_benchmark.yml
-    needs: determine_base
-    if: ${{ needs.determine_base.outputs.need_to_run != 'false' }}
     with:
       fork: python
       reponame: cpython
-      ref: ${{ needs.determine_base.outputs.ref }}
+      ref: ${{ inputs.base_version }}
       benchmarks: ${{ inputs.benchmarks }}
       pgo: true
       perf: false
