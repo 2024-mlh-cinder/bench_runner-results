@@ -101,13 +101,10 @@ jobs:
 
   pystats-base:
     uses: ./.github/workflows/_pystats.yml
-    needs: determine_base
-    if: ${{ inputs.pystats && needs.determine_base.outputs.need_to_run != 'false'
-      }}
     with:
       fork: python
       reponame: cpython
-      ref: ${{ needs.determine_base.outputs.ref }}
+      ref: ${{ inputs.base_version }}
       benchmarks: ${{ inputs.benchmarks }}
       individual: ${{ inputs.pystats_individual }}
       force: false
