@@ -82,21 +82,8 @@ jobs:
     - name: Install System Dependencies
       run: |
         sudo dnf update
-        sudo dnf install -y dnf-plugins-core ccache
+        sudo dnf install -y dnf-plugins-core
         sudo dnf builddep -y python3
-
-    - name: Enable ccache
-      run: |
-        sudo /usr/sbin/update-ccache-symlinks
-        echo 'export PATH="/usr/lib/ccache:$PATH"' | tee -a ~/.bashrc
-
-    - name: Cache ccache files
-      uses: actions/cache@v3
-      with:
-        path: ~/.ccache
-        key: ${{ runner.os }}-ccache-${{ github.sha }}
-        restore-keys: |
-          ${{ runner.os }}-ccache-
 
   benchmark-linux-x86_64-linux:
     needs: setup
