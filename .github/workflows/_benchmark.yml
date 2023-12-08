@@ -93,6 +93,11 @@ jobs:
     steps:
     - name: Checkout benchmarking
       uses: actions/checkout@v3
+    - name: Checkout bench_runner
+      uses: actions/checkout@v3
+      with:
+        repository: 2024-mlh-cinder/bench_runner-results
+        path: bench_runner
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
@@ -126,12 +131,14 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         cd ${{ inputs.reponame }}
-        ./configure ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit' || '' }}
+        ./configure --with-pydebug ${{ inputs.pgo == true && '--enable-optimizations --with-lto=yes' || '' }} ${{ inputs.jit == true && '--enable-experimental-jit' || '' }}
         make
     - name: Install pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         venv/bin/python -m pip install --no-binary :all: ./pyperformance
+    - name: Load msr module
+      run: sudo modprobe msr
     - name: Tune system
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
@@ -140,11 +147,13 @@ jobs:
       if: ${{ steps.should_run.outputs.should_run != 'false' && inputs.perf }}
       run: |
         sudo bash -c "echo 100000 > /proc/sys/kernel/perf_event_max_sample_rate"
+    - name: Create symbolic link between repo name and cpython
+      run: ln -fs ${{ inputs.reponame }} cpython
     - name: Running pyperformance
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
         rm -rf ~/.debug/*
-        venv/bin/python -m bench_runner run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} ${{ inputs.reponame }}/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
+        venv/bin/python bench_runner/scripts/run_benchmarks.py run_benchmarks ${{ inputs.perf && 'perf' || 'benchmark' }} ${{ inputs.reponame }}/python ${{ inputs.fork }} ${{ inputs.ref }} ${{ inputs.benchmarks || 'all' }} --run_id ${{ github.run_id }} ${{ inputs.tier2 == true && '--flag PYTHON_UOPS' || '' }} ${{ inputs.jit == true && '--flag JIT' || '' }}
     - name: Upload benchmark artifacts
       if: ${{ steps.should_run.outputs.should_run != 'false' && !inputs.perf }}
       uses: actions/upload-artifact@v3
