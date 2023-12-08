@@ -105,11 +105,6 @@ jobs:
       run: |
         python -m venv venv
         venv/bin/python -m pip install -r requirements.txt
-    - name: Should we run?
-      if: ${{ always() }}
-      id: should_run
-      run: |
-        venv/bin/python -m bench_runner should_run ${{ inputs.force }} ${{ inputs.fork }} ${{ inputs.ref }} linux-x86_64-aws false ${{ inputs.tier2 }} ${{ inputs.jit }}>> $GITHUB_OUTPUT
     - name: Checkout python-macrobenchmarks
       uses: actions/checkout@v3
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
