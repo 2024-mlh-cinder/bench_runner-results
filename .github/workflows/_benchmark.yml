@@ -95,9 +95,6 @@ jobs:
       uses: actions/checkout@v3
     - name: Setup system Python
       uses: actions/setup-python@v4
-      with:
-        python-version: '3.9'
-        cache: pip
     - name: Checkout CPython
       uses: actions/checkout@v3
       with:
