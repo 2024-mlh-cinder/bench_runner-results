@@ -61,7 +61,7 @@ jobs:
       reponame: ${{ inputs.reponame }}
       ref: ${{ inputs.ref }}
       benchmarks: ${{ inputs.benchmarks }}
-      pgo: true
+      pgo: false
       perf: false
       force: true
       tier2: ${{ inputs.tier2 }}
@@ -75,7 +75,7 @@ jobs:
       reponame: cpython
       ref: ${{ inputs.base_version }}
       benchmarks: ${{ inputs.benchmarks }}
-      pgo: true
+      pgo: false
       perf: false
       force: false
       tier2: ${{ inputs.tier2 }}
