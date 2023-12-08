@@ -89,7 +89,6 @@ jobs:
   benchmark-linux-x86_64-linux:
     needs: setup
     runs-on: [self-hosted]
-    timeout-minutes: 1440
 
     steps:
     - name: Checkout benchmarking
