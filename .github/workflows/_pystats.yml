@@ -115,7 +115,7 @@ jobs:
     - name: Install pyperformance into the system python
       if: ${{ steps.should_run.outputs.should_run != 'false' }}
       run: |
-        python -m pip install --no-binary :all: ./pyperformance
+        pip install --no-binary :all: ./pyperformance
     - name: Enable Tier 2
       if: ${{ inputs.tier2 }}
       run: |
