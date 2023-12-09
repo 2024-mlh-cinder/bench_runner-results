@@ -9,6 +9,12 @@ Here are some recent and important revisions. 👉 [Complete list of results](RE
 <!-- START table -->
 [Most recent pystats on main (3faf8e5)](results/bm-20231125-3.13.0a2%2B-3faf8e5-PYTHON_UOPS/bm-20231125-azure-x86_64-python-3faf8e586d36e73faba1-3.13.0a2%2B-3faf8e5-pystats.md)
 
+## linux x86_64 (aws)
+| date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0: | vs. 3.12.0: | vs. base: |
+| --- | --- | --- | --- | --- | ---: | ---: | ---: | ---: |
+| [2022-06-13](results/bm-20220613-3.12.0a0-df22eec) | facebookincubator | main | 3.12.0a0 | df22eec |  |  |  |  |
+| [2023-12-08](results/bm-20231208-3.11.7%2B-23234e9) | python | 3.11 | 3.11.7+ | 23234e9 |  |  |  |  |
+
 ## linux x86_64 (linux)
 | date | fork | ref | version | hash | vs. 3.10.4: | vs. 3.11.0: | vs. 3.12.0: | vs. base: |
 | --- | --- | --- | --- | --- | ---: | ---: | ---: | ---: |
